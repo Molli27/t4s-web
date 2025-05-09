@@ -30,17 +30,15 @@ export default function HomePage() {
       {/* Navbar Section */}
       <Navbar />
 
+      {/* Spacer to push content below the navbar */}
+      <div className="navbar-spacer" />
+
       {/* Header Section */}
       <Header />
 
       {/* Main Content */}
       <section id="intro">
         <Intro />
-      </section>
-
-      {/* About us Section */}
-      <section id="about-us">
-        <AboutUs />
       </section>
 
       {/* Services Section */}
@@ -61,6 +59,11 @@ export default function HomePage() {
       {/* Contact Section */}
       <section id="contact">
         <Contact />
+      </section>
+
+      {/* About us Section */}
+      <section id="about-us">
+        <AboutUs />
       </section>
 
       {/* Footer Section */}

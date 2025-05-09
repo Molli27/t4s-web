@@ -1,45 +1,44 @@
+import Link from 'next/link';
+
 const BusinessCases: React.FC = () => {
   return (
-    <section id="business-cases" className="business-cases">
-      <div className="container">
+    <section id="business-cases" className="business-cases-section">
+      <div className="business-cases-content">
         <h1>Anwendungen</h1>
-        <p>
-          Sie müssen bei einer Anlage die Temperatur über eine längere Zeit 5Tage /24h erfassen. Haben aber ein analoges Thermometer.
-          Wie lösen Sie das Problem?
+
+        <div className="business-cases-intro">
+          <h2>Effizienz steigern – Ressourcen schonen</h2>
+          <p>
+            Komplexe Systeme benötigen präzise Überwachung, um reibungslos zu funktionieren.
+            Die KI-Technologie ermöglicht automatisierte Fehlererkennung, registriert Soll-Abweichungen
+            und bleibt trotzdem einfach integrierbar.
           </p>
+        </div>
 
         <div className="business-cases-grid">
+          
           <div className="business-cases-item">
-            <h2>Computer Vision ist die Lösung</h2>
-            <p>
-              Nach eingestellter Zeit, z.B. 10 Min. löst die Kamera ein Bild aus und gleichzeitig wird der Anzeigewert
-                des Thermometers erfasst und gespeichert.
-            </p>
-          </div>
+              <h2>Produktionsüberwachung:<br />Mittelständiges Fertigungsunternehmen in der Kostenfalle</h2>
+              <p>
+                Die EBIT-Marge eines Kunststoffverarbeiters sinkt stetig. Trotz hoher Produktion
+                und 230 Artikeln zeigt sich erst durch die t4s-Systeme das volle Optimierungspotenzial.
+              </p>
+              <Link href="/use-cases/ProduktionsCase" className="use-case-button">
+                Link zum Bericht
+              </Link>
+            </div>
 
           <div className="business-cases-item">
-            <h2>Auswertung</h2>
+            <h2>Monitoring einer Heizungsanlage in einem Mehrfamilienhaus</h2>
             <p>
-              In wenigen Minuten haben Sie die Messdaten mit der Anzeige des Thermometers kalibriert und 
-              die erhaltenen Messdaten für die Excel Auswertung bereit.
+              In einem Mehrfamilienhaus kämpften die Bewohnerinnen und Bewohner über Monate hinweg
+              mit unzureichendem Warmwasser. Erst der Einsatz des optischen t4s-Messsystems brachte Klarheit.
             </p>
+            <Link href="/use-cases/HeizungsCase" className="use-case-button">
+              Link zum Bericht
+            </Link>
           </div>
 
-          <div className="business-cases-item">
-            <h2>Bericht erstellen</h2>
-            <p>
-              Nebst der individuellen Auswertung mit Excel ist ein Standard Report verfügbar der mit einem 
-              Klick die relavante Daten in einem Diagramm veranschaulicht.
-            </p>
-          </div>
-
-          <div className="business-cases-item">
-            <h2>Beratung </h2>
-            <p>
-              In wenigen Minuten ist die Kamera installiert und erlaubt unabhängig 
-              vom gesamt Betireb die Datenerfassung.
-            </p>
-          </div>
         </div>
       </div>
     </section>

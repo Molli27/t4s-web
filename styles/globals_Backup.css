@@ -1,0 +1,897 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================= */
+/* Global Reset */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================= */
+/* Body: General Page Styling */
+/* ========================= */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #212931;
+}
+
+/* ========================= */
+/* Background Image Wrapper */
+/* ========================= */
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden; /* Ensures background stays fixed */
+}
+
+.wrapper .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Blue_right_2520670517.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+/* ========================= */
+/* Navbar Styles */
+/* ========================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background-color: #141b4d;
+    padding: 0.5rem 1rem;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .logo-container img {
+    height: auto;
+    width: 120px;
+  }
+  
+  .navbar-container h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li button:hover {
+    color: #009fdf;
+  }
+      
+
+/* ========================= */
+/* Header Styles */
+/* ========================= */
+
+/* Space left open for header section; later SEO optimization */ 
+
+.header {
+    font-size: 1rem;
+}
+
+/* ========================= */
+/* INTRO SECTION */
+/* ========================= */
+/* Full-height section with background */
+.intro-section {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fdfdfd, #eaeaea); /* change as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    }
+  
+/* Centered content container */
+.intro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    width: 100%;
+}
+  
+  /* Text styles */
+  .intro-text {
+    flex: 1;
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .intro-text p {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  /* Image styles */
+  .intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Optional: can remove for sharper look */
+  }
+  
+  /* Optional: scroll snapping for smoother transitions */
+  html, body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+
+/* ========================= */
+/* ABOUT US CONTENT */
+/* ========================= */
+
+/* Subtle deming section layout update */
+.about-us-section {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to top, #ffffff, #f2f2f2);
+    padding: 4rem 2rem;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+  
+
+.about-us-content {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+  
+  
+/* Subtle deming section layout update */
+.deming {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.deming p {
+    margin: 0;
+    font-weight: bold;
+    min-width: 180px;
+}
+
+.deming ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+
+/* ========================= */
+/* SERVICES CONTENT */
+/* ========================= */
+
+.services-section {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+    padding: 4rem 2rem;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+  }
+  
+  .services-content {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .service-item {
+    margin-top: 2rem;
+  }
+
+.services h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00249C;
+    background-color: #ffffff;
+    padding: 10px 20px 10px 0px;
+    margin: -20px -40px 10px 0px;
+    border-radius: 8px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Ensures text is not kept on one line */
+    hyphens: auto; /* Enables hyphenation for better wrapping */
+}
+
+.services h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 10px 0px 0px;
+    text-align: left;
+}
+
+.services p {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* Design bullet points */
+.services ul {
+    padding: 10px 0px 20px 20px;
+    list-style-type: disc;
+}
+  
+.services li {
+    font-size: 1rem;
+    color: #141B4D;
+    margin-bottom: 4px;
+}
+
+/* ========================= */
+/* SERVICES TABLE CONTENT */
+/* ========================= */
+
+/* Global table styling */
+.services-table {
+    width: 100%;
+    margin-left: 0;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  /* Header styling */
+  .services-table th {
+    background-color: #f0f0f0;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Body row styling */
+  .services-table td {
+    padding: 6px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+  }
+
+  /* Ensure text wraps properly */
+  .services-table td {
+    font-size: 16px;
+    white-space: pre-line;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Ensures text is not kept on one line */
+    hyphens: auto; /* Enables hyphenation for better wrapping */
+  }
+  
+  /* Column widths */
+  .services-table th:nth-child(1),
+  .services-table td:nth-child(1) {
+    width: 10%;
+    min-width: 70px;
+    max-width: 75px;
+    text-align: center;
+  }
+  
+  .services-table th:nth-child(2),
+  .services-table td:nth-child(2) {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .services-table th:nth-child(3),
+  .services-table td:nth-child(3) {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .services-table th:nth-child(4),
+  .services-table td:nth-child(4) {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .services-table th:nth-child(5),
+  .services-table td:nth-child(5) {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  
+  /* Ensure multiline text wraps properly */
+  .services-table td {
+    white-space: pre-line;
+  }
+  
+  /* Optional: Responsive table */
+  @media (max-width: 768px) {
+    .services-table th,
+    .services-table td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+ 
+/* ========================= */
+/* COST TABLE CONTENT */
+/* ========================= */
+
+/* Global table styling */
+.cost-table {
+    width: 75%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .cost-table th,
+  .cost-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .cost-table th {
+    background-color: #f0f0f0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* First column: Position */
+  .cost-table td:first-child,
+  .cost-table th:first-child {
+    width: 75%;
+  }
+  
+  /* Second column: Total (CHF) */
+  .cost-table td:last-child,
+  .cost-table th:last-child {
+    width: 25%;
+    text-align: right;
+  }
+  
+  /* Last row (Total) emphasis */
+  .cost-table tr:last-child td {
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive font scaling */
+  @media (max-width: 768px) {
+    .cost-table th,
+    .cost-table td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+  
+  
+
+
+
+/* ========================= */
+/* BUSINESS CASES CONTENT */
+/* ========================= */
+
+.business-cases-section {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    padding: 4rem 2rem;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+  
+.business-cases-content {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+  
+.business-cases-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+  
+.business-cases-item {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+  
+.business-cases-intro {
+    margin-bottom: 2rem;
+}
+  
+
+.business-cases h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00249C;
+    ;
+    background-color: #ffffff;
+    padding: 10px 20px 10px 0px;
+    margin: -20px -40px 10px 0px;
+    border-radius: 8px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Ensures text is not kept on one line */
+    hyphens: auto; /* Enables hyphenation for better wrapping */
+}
+
+.business-cases h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 10px 0px 0px;
+    text-align: left;
+}
+
+.business-cases p {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* ========================= */
+/* Use-Case Button */
+/* ========================= */
+
+.use-case-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009FDF;  /* Your primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.use-case-button:hover {
+    background-color: #007BB5; /* Slightly darker for hover effect */
+}
+
+.use-case-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+/* ========================= */
+/* Technology Approach SECTION (Fixed Layout with Image) */
+/* ========================= */
+
+.tech-approach-section {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to top, #f4f4f4, #e0e0e0);
+    padding: 4rem 2rem;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+  }
+  
+  .tech-approach-content {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .tech-approach-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .tech-approach-textblock {
+    flex: 1 1 60%;
+    background-color: #E1D8BF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #000;
+    text-align: justify;
+  }
+  
+  .tech-approach-img {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tech-approach-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .tech-approach-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+
+/* ========================= */
+/* CONTACT CONTENT */
+/* ========================= */
+
+.contact-section {
+    width: 100vw;
+    min-height: 60vh;
+    background: linear-gradient(to top, #ffffff, #f8f8f8);
+    padding: 4rem 2rem;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    scroll-snap-align: start;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .contact-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00249C;
+    background-color: #ffffff;
+    padding: 10px 20px 10px 0px;
+    margin: -20px -40px 10px 0px;
+    border-radius: 8px;
+  }
+  
+  .contact-details h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 10px 0;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 5px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  
+
+/* ========================= */
+/* Section Divider */
+/* ========================= */
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #B1B3B3;
+    margin: 40px auto;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+.footer {
+    position: sticky;
+    background-color: #141b4d;
+    color: rgb(253, 253, 253);
+    padding: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    padding: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.footer-links a:hover {
+    color: #009fdf;
+}
+
+
+
+/* ========================= */
+/* Page Containers */
+/* ========================= */
+.page-container {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 80px  auto;
+    margin-bottom: 20px;
+    padding: 0px 20px 20px 20px; /* Top, Right, Bottom, Left */
+    background-color: rgba(255, 255, 255, 1.0); /* Slight transparency for readability */
+    border-radius: 8px;
+    word-break: normal;
+    overflow-wrap: break-word;
+    white-space: normal; /* Ensures text is not kept on one line */
+    hyphens: auto; /* Enables hyphenation for better wrapping */
+    text-align: justify;
+}
+
+.page-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00249C;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.page-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 10px 0px 0px;
+    text-align: left;
+}
+
+.page-container p {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;  
+}
+/* ========================= */
+/* Flex container for text & image alignment */
+/* ========================= */
+.flex-container {
+    display: flex;
+    align-items: flex-start ; /* Align text & image vertically */
+    justify-content: flex-start; /* Create space between text & image */
+    gap: 20px; /* Add spacing between elements */
+    max-width: 100%;
+}
+
+/* Style for the text section */
+.text-content {
+    display: block;
+    flex: 1;  /* Takes up remaining space */
+    text-align: justify;
+    max-width: 80%;
+}
+
+/* Design bullet points */
+.text-content ul {
+    padding: 10px 0px 20px 20px;
+    list-style-type: disc;
+}
+  
+.text-content li {
+    font-size: 1rem;
+    color: #000002;
+    margin-bottom: 4px;
+}
+
+/* ========================= */
+/* Image + Video Container Styling */
+/* ========================= */
+.media-container {
+    display: flex-start;
+    justify-content: flex-start; /* Stack image and video */
+    align-items: right; /* Center both */
+    max-width: 35%; /* Matches image width */
+    text-align: right;
+}
+
+/* Style for the image container */
+.image-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns image to the right */
+    flex-shrink: 0;
+    max-width: 35%;
+    text-align: center; /* Aligns image to the right */
+    margin-top: 60px; /* Optional: Adds space between text & image */
+}
+
+/* Ensure images are responsive */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Apply fixed width only to this image */
+.fixed-width {
+    max-width: 100%; /* Fix width */
+    margin: auto;  /* Center the image */
+    margin-top: 60px; /* Optional: Adds space between text & image */
+}
+
+
+.video-container {
+    justify-content: right; /* Centers video horizontally */
+    align-items: center;
+    margin: 20px auto;
+    margin-top: 40px; /* Optional: Adds space between text & video */
+    max-width: 600px;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow */
+}
+
+
+
+
+
+/* ========================= */
+/* Responsive Adjustments */
+/* ========================= */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .intro,
+    .tech-approach {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .tech-approach .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tech-approach-img img {
+        max-width: 200px;
+    }
+
+    section {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack text & image on smaller screens */
+        text-align: center;
+    }
+    .text-content, .image-container {
+        max-width: 100%;
+    }
+
+    .image-container {
+        max-width: 100%;
+        text-align: center; /* Center the image on mobile */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .intro {
+        max-width: 1200px;
+    }
+}

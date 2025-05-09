@@ -1,52 +1,69 @@
 const TechApproach: React.FC = () => {
   return (
-    <section id="tech-approach" className="tech-approach">
-      <h1>Technologie</h1>
-      <p>
-        Welche Technologie wird eingesetzt? <br></br>
-      </p>  
+    <section id="tech-approach" className="tech-approach-section">
+      <div className="tech-approach-content">
+        <h1>Technologie</h1>
+        
 
-      <div className="container">
-
-        {/* Flex container for text an image */}
-        <div className= "tech-approach-content">
+        <div className="tech-approach-flex">
           <div className="tech-approach-textblock">
-            <h2>Computer Vision - Maschinen lernen, zu sehen</h2>
+            <h2>Computer Vision – Maschinen lernen, zu sehen</h2>
             <p>
-            Computer Vision ermöglicht Maschinen, Bilder zu analysieren und daraus Informationen zu gewinnen. 
-            Die Technologie begann mit der digitalen Fotografie, die in den 1970er Jahren mit den ersten digitalen 
-            Bildsensoren ihren Ursprung hatte. Heute nutzt Computer Vision künstliche Intelligenz zur automatischen Erkennung 
-            von Objekten und Mustern. In der Industrie wird sie zur Produktionsüberwachung eingesetzt, 
-            z. B. zur Qualitätskontrolle von Bauteilen. Ein Kamerasystem erfasst Bilder, die Software erkennt Fehler 
-            oder Abweichungen - schnell und zuverlässig. 
-            Dadurch verbessern KMU ihre Prozesse und reduzieren Kosten. 
-            Ein anschauliches Beispiel zeigt das ergänzende Bild.
+              Computer Vision ermöglicht Maschinen, Bilder zu analysieren und daraus Informationen zu gewinnen...
             </p>
           </div>
-        
+
           <div className="tech-approach-img">
             <img src="/images/250212_CompVision_0.png" alt="Computer Vision" />
           </div>
         </div>
-        
-        <h2>KI-Modelle</h2>
-        <p>
-          In wenigen Minuten haben Sie die Messdaten mit der Anzeige des Thermometers kalibriert und 
-          die erhaltenen Messdaten für die Excel Auswertung bereit
-        </p>
-       
-        <h2>Hardware</h2>
-        <p>
-          Nebst der individuellen Auswertung mit Excel ist ein Standard Report verfügbar, der mit einem 
-          Klick die relavante Daten in einem Diagramm veranschaulicht.
-        </p>
-       
-        <h2>Peripherie</h2>
-        <p>
-          In wenigen Minuten ist die Kamera installiert und erlaubt unabhängig 
-          vom laufenden Betrieb die Datenerfassung.
-        </p>
-       
+
+        <div className="tech-approach-details">
+          <h2>KI-Modelle – Standardisiert, robust, einsatzbereit</h2>
+          <p>
+            Wir integrieren bewährte, vortrainierte KI-Algorithmen für die visuelle Objekterkennung. 
+            Dies ermöglicht eine präzise optische Merkmalerkennung zur zuverlässigen Klassifizierung und 
+            Identifikation von Artikeln. Die Artikelaufnahme erfolgt über eine geführte, standardisierte 
+            Benutzeroberfläche – effizient, reproduzierbar und skalierbar.<br />
+            Unsere Kunden lassen wir dabei nicht allein: Wir übernehmen auf Wunsch die komplette Artikelaufnahme 
+            oder schulen Ihre Mitarbeitenden gezielt für den eigenständigen Einsatz.
+          </p>
+        </div>
+        <div className="tech-approach-flex">
+          <h2>Hardware & IT-Infrastruktur – Flexibel für jede Industrieumgebung</h2>
+          
+          <div className="tech-approach-details-textblock">
+          <p>
+            Unsere Lösung basiert auf einem Zusammenspiel aus Kamerasystemen und Edge-Computern, die den trainierten 
+            Algorithmus lokal ausführen. Die erfassten Daten werden in eine zentrale Datenbank übertragen – je nach 
+            Gegebenheit per WLAN, Ethernet oder industriellem Bussystem.<br />
+            Wir setzen je nach Einsatzszenario unterschiedliche Kameratypen ein: Von kompakten, geschützten Systemen 
+            für Pilotprojekte bis hin zu robusten Industrievarianten gemäss gängiger Normen. So schaffen wir eine 
+            skalierbare Infrastruktur – passend zu Ihrer Produktionsumgebung.
+          </p>
+          </div>
+
+          <div className="tech-approach-img2">
+            <img src="/images/250509_MachVisionCam_1.jpg" alt="Industrial Camera" />
+          </div>
+        </div>
+
+        <div className="tech-approach-details">
+        <h2>Peripherie – Modular und einsatzbereit</h2>
+          <div className="tech-approach-flex">
+            <div className="tech-approach-details-textblock"> 
+            <p>
+              Ein durchdachtes Installationssystem ermöglicht die schnelle, flexible Montage der Kameras direkt vor Ort. 
+              Für optimale Bildqualität werden bei Bedarf zusätzliche Beleuchtungseinrichtungen eingesetzt – ein oft 
+              unterschätzter, aber entscheidender Faktor für zuverlässige Erkennungs-ergebnisse. So sichern wir den stabilen 
+              Betrieb auch bei herausfordernden Lichtverhältnissen.
+            </p>
+            </div>
+            <div className="tech-approach-img2">
+              <img src="/images/250509_CameraInstall.jpg" alt="Camera Installation" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

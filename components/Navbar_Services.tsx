@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Navbar: React.FC = () => {
+const Navbar_Services: React.FC = () => {
   const handleScroll = (id: string) => {
     const section = document.getElementById(id);
     const offset = 100;
@@ -21,22 +20,20 @@ const Navbar: React.FC = () => {
         </div>
         <h1>technology for solutions</h1>
         <ul className="nav-links">
-          {[
-            
-            ["services", "Leistungen"],
-            ["business-cases", "Anwendungen"],
-            ["tech-approach", "Technologie"],
-            ["contact", "Kontakt"],
-            ["about-us", "Über uns"]
-          ].map(([id, label]) => (
-            <li key={id}>
-              <button onClick={() => handleScroll(id as string)}>{label}</button>
-            </li>
-          ))}
+          <li>
+            <Link href="/#services">
+              <button>Home</button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/#contact">
+              <button>Kontakt</button>
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
   );
 };
 
-export default Navbar;
+export default Navbar_Services;

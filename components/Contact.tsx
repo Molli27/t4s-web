@@ -2,13 +2,12 @@ import Image from "next/image";
 
 const Contact: React.FC = () => {
   return (
-    <section className= "contact">
-      <h1>Kontakt</h1>
-      <div className="contact-container">
-        
-        <div className="contact-Details">
+    <section id="contact" className="contact-section">
+      <div className="contact-content">
+        <h1>Kontakt</h1>
+        <div className="contact-details">
           <h2>Sie finden uns hier</h2>
-          <div className= "contact-info">
+          <div className="contact-info">
             <p>technology for solution</p>
             <p>Hofstrasse 41</p>
             <p>4127 Birsfelden</p>
