@@ -5,7 +5,7 @@ const Services: React.FC = () => {
   return (
     <section
       id="services"
-      className="w-full pt-20 pb-16 px-4 sm:px-6 lg:px-8"
+      className="w-full pt-20 pb-16 px-4 sm:px-6 lg:px-8 mt-[100px]"
       style={{
         background: "linear-gradient(to bottom, #FFFFFF, #D7D2CB)",
       }}
@@ -65,8 +65,9 @@ const Services: React.FC = () => {
         <div className="text-center">
           <Link href="/use-cases/Services_PlanningCase">
             <span 
-            className="inline-block bg-blue-cyan px-6 py-2 rounded-md font-semibold hover:bg-blue-dark transition"
-              style={{ color: "#00249C" }}
+            className="inline-block px-6 py-2 font-semibold rounded-md shadow-md hover:bg-blue-dark hover:text-white transition"
+              style={{ backgroundColor: "#00249C", // deep blue
+                        color: "#FFFFFF" }}
             >
               Link zum Bericht
             </span>
