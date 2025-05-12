@@ -1,37 +1,66 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Menu, X } from "lucide-react"; // install with: npm install lucide-react
 
 const Navbar_Services: React.FC = () => {
-  const handleScroll = (id: string) => {
-    const section = document.getElementById(id);
-    const offset = 100;
-
-    if (section) {
-      const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top: sectionPosition, behavior: "smooth" });
-    }
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="navbar">
-      <div className="navbar-container">
-        <div className="logo-container">
-          <Image src="/images/logo_white.png" alt="t4s Logo" width={120} height={80} />
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#141B4D] shadow-md">
+      <div className="flex items-center justify-between px-4 sm:px-6 py-3">
+        {/* Logo + Title */}
+        <div className="flex items-center space-x-4">
+          <Image src="/images/logo_white.png" alt="t4s Logo" width={100} height={60} />
+          <h1 className="text-white font-bold text-lg">technology for solutions</h1>
         </div>
-        <h1>technology for solutions</h1>
-        <ul className="nav-links">
+
+        {/* Mobile toggle */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="sm:hidden text-white focus:outline-none"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Desktop nav links */}
+        <ul className="hidden sm:flex space-x-6 items-center text-white text-base">
           <li>
             <Link href="/#services">
-              <button>Home</button>
+              <span className="inline-block bg-blue-cyan text-blue-dark px-4 py-1.5 rounded-md font-semibold hover:bg-blue-dark hover:text-white transition">
+                Home
+              </span>
             </Link>
           </li>
           <li>
             <Link href="/#contact">
-              <button>Kontakt</button>
+              <span className="inline-block bg-blue-cyan text-blue-dark px-4 py-1.5 rounded-md font-semibold hover:bg-blue-dark hover:text-white transition">
+                Kontakt
+              </span>
             </Link>
           </li>
         </ul>
       </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <ul className="sm:hidden flex flex-col items-center bg-[#141B4D] text-white pb-4 space-y-4 text-base">
+          <li>
+            <Link href="/#services" onClick={() => setIsOpen(false)}>
+              <span className="inline-block bg-blue-cyan text-blue-dark px-4 py-1.5 rounded-md font-semibold hover:bg-blue-dark hover:text-white transition">
+                Home
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/#contact" onClick={() => setIsOpen(false)}>
+              <span className="inline-block bg-blue-cyan text-blue-dark px-4 py-1.5 rounded-md font-semibold hover:bg-blue-dark hover:text-white transition">
+                Kontakt
+              </span>
+            </Link>
+          </li>
+        </ul>
+      )}
     </header>
   );
 };
