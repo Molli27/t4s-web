@@ -10,9 +10,10 @@ const Services: React.FC = () => {
         background: "linear-gradient(to bottom, #FFFFFF, #D7D2CB)",
       }}
       >
-        
+
       <div className="max-w-4xl mx-auto space-y-8 text-black">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-dark">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-dark"
+            style={{ color: "#00249C" }}>
           Vorausschauend handeln – für eine starke Produktion von morgen.
         </h1>
 
@@ -63,7 +64,10 @@ const Services: React.FC = () => {
 
         <div className="text-center">
           <Link href="/use-cases/Services_PlanningCase">
-            <span className="inline-block bg-blue-cyan text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-dark transition">
+            <span 
+            className="inline-block bg-blue-cyan px-6 py-2 rounded-md font-semibold hover:bg-blue-dark transition"
+              style={{ color: "#00249C" }}
+            >
               Link zum Bericht
             </span>
           </Link>
