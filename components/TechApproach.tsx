@@ -13,10 +13,11 @@ const TechApproach: React.FC = () => {
           Technologie</h1>
 
         {/* Section 1: Computer Vision */}
-        <div className="flex flex-col md:flex-row items-start gap-6"
-             style={{ backgroundColor: "#B59E5F", }}>
+        <div className="flex flex-col md:flex-row items-start gap-6">
 
-          <div className="rounded-md p-6 shadow-md space-y-4 flex-1">
+          <div className="rounded-md p-6 shadow-md space-y-4 flex-1"
+          style={{ backgroundColor: "#B59E5F", }}
+          >
             <h2 className="text-xl font-semibold mb-2">
               Computer Vision – Maschinen lernen, zu sehen
             </h2>
