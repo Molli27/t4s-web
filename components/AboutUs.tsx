@@ -2,7 +2,7 @@ const AboutUs: React.FC = () => {
   return (
     <section
       id="about-us"
-      className="w-full px-4 sm:px-6 lg:px-8 pb-16 mt-[100px]"
+      className="w-full pt-20 pb-16 px-4 sm:px-6 lg:px-8 mt-[100px]"
       style={{
         background: "linear-gradient(to top, #FFFFFF, #D7D2CB)",
       }}
