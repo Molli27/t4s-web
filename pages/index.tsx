@@ -63,15 +63,16 @@ export default function HomePage() {
         <TechApproach />
       </section>
 
+      {/* About us Section */}
+      <section id="about-us">
+        <AboutUs />
+      </section>
+
       {/* Contact Section */}
       <section id="contact">
         <Contact />
       </section>
 
-      {/* About us Section */}
-      <section id="about-us">
-        <AboutUs />
-      </section>
 
       {/* Footer Section */}
       <footer id="footer">

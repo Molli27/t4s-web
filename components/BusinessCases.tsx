@@ -23,7 +23,7 @@ const BusinessCases: React.FC = () => {
 
         <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2">
           {/* Case 1 */}
-          <div className="p-6 bg-white rounded-md shadow-md space-y-4">
+          <div className="p-6 bg-white rounded-md p-6 shadow-md space-y-4">
             <h2 className="text-lg font-semibold leading-snug">
               Produktionsüberwachung:<br />Mittelständiges Fertigungsunternehmen in der Kostenfalle
             </h2>
@@ -42,7 +42,7 @@ const BusinessCases: React.FC = () => {
           </div>
 
           {/* Case 2 */}
-          <div className="p-6 bg-white rounded-md shadow-md space-y-4">
+          <div className="p-6 bg-white rounded-md p-6 shadow-md space-y-4">
             <h2 className="text-lg font-semibold leading-snug">
               Monitoring einer Heizungsanlage in einem Mehrfamilienhaus
             </h2>

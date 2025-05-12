@@ -417,116 +417,13 @@ body {
 
 
 /* ========================= */
-/* TECHNOLOGY APPROACH SECTION */
+/* TECHNOLOGY APPROACH SECTION — MINIMIZED FOR TAILWIND */
 /* ========================= */
 
 .tech-approach-section {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, var(--color-white), var(--color-warm-gray));
-  padding: 4rem 2rem;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
   scroll-snap-align: start;
 }
 
-.tech-approach-content {
-  max-width: 1000px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  font-family: var(--font-primary);
-}
-
-.tech-approach-content h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-blue-dark);
-  padding: 10px 20px 10px 0px;
-  margin: -20px -40px 10px 0px;
-  background-color: var(--color-white);
-  border-radius: 8px;
-}
-
-.tech-approach-content h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--color-black);
-  margin: 20px 10px 10px 0px;
-  text-align: left;
-}
-
-.tech-approach-content p {
-  font-size: 1rem;
-  color: var(--color-black);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-.tech-approach-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-}
-
-.tech-approach-textblock {
-  flex: 1 1 60%;
-  background-color: var(--color-gold);
-  padding: 1.5rem;
-  border-radius: 10px;
-  color: var(--color-black);
-  text-align: justify;
-}
-
-.tech-approach-img {
-  flex: 1 1 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tech-approach-img img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.tech-approach-details {
-  flex: 1 1 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  text-align: justify;
-}
-
-
-
-.tech-approach-details-textblock {
-  flex: 1 ;
-  padding: 1.2 rem;
-  text-align: justify;
-}
-
-
-.tech-approach-img2 {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.tech-approach-img2 img {
-  width: 100%;
-  height: auto;
-  max-width: 150px;
-  object-fit: contain;
-  border-radius: 10px;
-} 
 
 /* ========================= */
 /* CONTACT SECTION */
