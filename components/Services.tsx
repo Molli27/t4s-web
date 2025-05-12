@@ -5,11 +5,12 @@ const Services: React.FC = () => {
   return (
     <section
       id="services"
-      className="w-full pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+      className="w-full pt-20 pb-16 px-4 sm:px-6 lg:px-8"
       style={{
         background: "linear-gradient(to bottom, #FFFFFF, #D7D2CB)",
       }}
-    
+      >
+        
       <div className="max-w-4xl mx-auto space-y-8 text-black">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-dark">
           Vorausschauend handeln – für eine starke Produktion von morgen.
