@@ -328,117 +328,50 @@ body {
 
 
 /* ========================= */
-/* SERVICES CONTENT */
+/* SERVICES SECTION (Minimal Tailwind-Compatible) */
 /* ========================= */
 
 .services-section {
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(to bottom, var(--color-white), var(--color-warm-gray));
-  padding: 4rem 2rem;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  scroll-snap-align: start;
-}
-
-.services-section h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-blue-dark);
-  padding: 10px 20px 10px 0px;
-  margin: -20px -40px 10px 0px;
-  border-radius: 8px;
-  background-color: var(--color-white);
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
-
-.services-section h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--color-black);
-  margin: 20px 10px 0px 0px;
-  text-align: left;
-}
-
-.services-section h3 {
-  font-size: 1.0rem;
-  font-weight: bold;
-  color: var(--color-black);
-  margin: 20px 10px 0px 0px;
-  text-align: left;
+  padding-top: 80px; /* navbar spacer */
+  padding-bottom: 64px;
 }
 
 .services-content {
-  max-width: 900px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  max-width: 1024px; /* Matches Tailwind's max-w-4xl */
+  margin: 0 auto;
+  padding-left: 1rem;  /* Tailwind: px-4 */
+  padding-right: 1rem;
   font-family: var(--font-primary);
-  text-align: justify;
 }
 
-.service-item {
-  margin-top: 2rem;
-}
-
-.services-intro p {
-  font-size: 1rem;
-  color: var(--color-black);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-/* Bullet points */
+/* Optional: Use only if you still use this elsewhere */
 .services-section ul {
-  padding: 10px 0px 20px 20px;
   list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 .services-section li {
-  font-size: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--color-navy);
-  margin-bottom: 4px;
 }
 
-
-.services-section-img {
-  flex: 1 1 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* You may remove this if no longer using this class in JSX */
+.services-intro p {
+  margin: 0;
+  line-height: 1.6;
 }
 
+/* Optional image section (only if used!) */
 .services-section-img img {
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   object-fit: contain;
 }
 
 
-.service-section-html {
-  width: 100%;
-  max-width: 1000px; /* or whatever fits your design */
-  margin: 0 auto;
-  padding:0px;
-  box-sizing: border-box;
-  border-radius: 8px;         /* optional */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional */
-}
-
-.service-section-html iframe {
-  width: 100%;
-  height: 353px; /* you can tweak based on your diagram size */
-  border: none;
-  border-radius: 8px; /* optional */
-  overflow: none; /* optional */
-}
 
 /* ========================= */
 /* Service Button */
@@ -472,59 +405,6 @@ body {
   font-weight: bold;
 }
 
-
-/* ========================= */
-/* COST TABLE CONTENT */
-/* ========================= */
-
-.cost-table {
-  width: 75%;
-  border-collapse: collapse;
-  border: 1px solid var(--color-cool-gray);
-  font-size: 16px;
-}
-
-.cost-table th,
-.cost-table td {
-  padding: 8px;
-  border: 1px solid var(--color-cool-gray);
-  text-align: left;
-  vertical-align: top;
-}
-
-.cost-table th {
-  background-color: var(--color-warm-gray);
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--color-black);
-}
-
-.cost-table td:first-child,
-.cost-table th:first-child {
-  width: 75%;
-}
-
-.cost-table td:last-child,
-.cost-table th:last-child {
-  width: 25%;
-  text-align: right;
-}
-
-.cost-table tr:last-child td {
-  font-weight: bold;
-  background-color: #f9f9f9;
-}
-
-/* Responsive table */
-@media (max-width: 768px) {
-  .services-table th,
-  .services-table td,
-  .cost-table th,
-  .cost-table td {
-    font-size: 14px;
-    padding: 6px;
-  }
-}
 
 
 /* ========================= */
