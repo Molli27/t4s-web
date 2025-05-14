@@ -50,7 +50,7 @@ const Navbar_Services: React.FC = () => {
           <ul className="sm:hidden flex flex-col items-end w-full text-white pt-2 space-y-2 text-base">
             {[
               ["/#services", "Home"],
-              ["/#contact", "Kontakt"],
+              ["/#contact", "Kontakt xx"],
             ].map(([href, label]) => (
               <li key={label} className="w-full">
                 <Link href={href} onClick={() => setIsOpen(false)}>
