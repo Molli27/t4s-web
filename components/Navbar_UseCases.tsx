@@ -27,7 +27,7 @@ const Navbar_UseCases: React.FC = () => {
           </li>
           <li>
             <Link href="/#contact">
-              <button>Kontakt</button>
+              <button>Kontakt_99</button>
             </Link>
           </li>
         </ul>

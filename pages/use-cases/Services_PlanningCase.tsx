@@ -1,4 +1,4 @@
-import Navbar_UseCases from "../../components/Navbar_Services";
+import Navbar_Services from "../../components/Navbar_Services";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ export default function ProduktionsCase() {
       <div className="bg" />
 
       {/* Navbar Section */}
-      <Navbar_UseCases />
+      <Navbar_Services />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 space-y-10 text-black">
         <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark">
