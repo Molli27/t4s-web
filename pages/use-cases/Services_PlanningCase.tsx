@@ -10,13 +10,39 @@ export default function ProduktionsCase() {
       {/* Navbar Section */}
       <Navbar_UseCases />
 
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 space-y-10 text-black">
-        <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 space-y-10 text-black"
+        style={{
+          background: "linear-gradient(to bottom, #FFFFFF, #D7D2CB)",
+        }}
+      >
+        
+        
+        <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark"
+            style={{ color: "#00249C" }}>
           Mit Statistik komplexe Produtionsabläufe verstehen
         </h1>
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold">Ausgangslage</h2>
+          <h2 className="text-xl font-semibold">
+            Ausgangslage
+          </h2>
+          <p className="text-justify">
+              Im Management eines mittelständischen Kunststoffverarbeiters schrillen die Alarmglocken: Die EBIT-Marge sinkt
+              seit Monaten – leise, aber stetig. Das Unternehmen beschäftigt 150 Mitarbeitende, erwirtschaftet 21 Mio. CHF
+              Umsatz und produziert im Drei-Schicht-Modell an fünf Tagen die Woche. Das Portfolio umfasst 230 aktive Artikel.
+              <br/>
+              Eine erste Analyse zeigt: Die Rohstoffkosten steigen kontinuierlich, während der Umsatz stagniert.
+              Währungsschwankungen und volatile Einkaufspreise werden geprüft – doch der analytische Finanzchef bleibt
+              skeptisch. Sein Bauchgefühl – und seine Excel-Tabellen – sagen: Hier geht mehr verloren, als erklärbar ist.
+              <br/>
+              Ein monatlicher Verlust von 15.000 CHF bleibt rätselhaft. In der Geschäftsleitung wird diskutiert, gestritten,
+              analysiert. Der Produktionsleiter verweist auf kleinere Losgrössen und häufige Werkzeugwechsel – ein valides
+              Argument, denn Anfahrverluste steigen dadurch. Aber ist das die ganze Wahrheit?
+              <br/>
+              Eine interne Taskforce nimmt drei Artikel ins Visier. Da erinnert sich der Qualitätsmanager an einen 
+              LinkedIn-Post über t4s: ein System zur optischen Produktidentifikation mittels Kameras – ohne Eingriff in 
+              bestehende Abläufe. Einfach zu installieren, praxisnah und verständlich. Die Neugier ist geweckt.
+          </p>
 
           <div className="w-full aspect-video max-w-3xl mx-auto border border-gray-300 rounded-md shadow-md overflow-hidden">
             <iframe
@@ -24,30 +50,28 @@ export default function ProduktionsCase() {
               title="Production Flow Diagram"
               className="w-full h-full"
             />
+            
           </div>
 
-            <p className="text-justify">
-                Im Management eines mittelständischen Kunststoffverarbeiters schrillen die Alarmglocken: Die EBIT-Marge sinkt
-                seit Monaten – leise, aber stetig. Das Unternehmen beschäftigt 150 Mitarbeitende, erwirtschaftet 21 Mio. CHF
-                Umsatz und produziert im Drei-Schicht-Modell an fünf Tagen die Woche. Das Portfolio umfasst 230 aktive Artikel.
-                <br/>
-                Eine erste Analyse zeigt: Die Rohstoffkosten steigen kontinuierlich, während der Umsatz stagniert.
-                Währungsschwankungen und volatile Einkaufspreise werden geprüft – doch der analytische Finanzchef bleibt
-                skeptisch. Sein Bauchgefühl – und seine Excel-Tabellen – sagen: Hier geht mehr verloren, als erklärbar ist.
-                <br/>
-                Ein monatlicher Verlust von 15.000 CHF bleibt rätselhaft. In der Geschäftsleitung wird diskutiert, gestritten,
-                analysiert. Der Produktionsleiter verweist auf kleinere Losgrössen und häufige Werkzeugwechsel – ein valides
-                Argument, denn Anfahrverluste steigen dadurch. Aber ist das die ganze Wahrheit?
-                <br/>
-                Eine interne Taskforce nimmt drei Artikel ins Visier. Da erinnert sich der Qualitätsmanager an einen 
-                LinkedIn-Post über t4s: ein System zur optischen Produktidentifikation mittels Kameras – ohne Eingriff in 
-                bestehende Abläufe. Einfach zu installieren, praxisnah und verständlich. Die Neugier ist geweckt.
-            </p>
         </section>
 
         <section className="flex flex-col md:flex-row gap-6">
             <div className="flex-1 space-y-4">
                 <h2 className="text-xl font-semibold">t4s als Partnerin für KI-gestützte Produktionsüberwachung</h2>
+                
+                <figure className="md:float-right md:ml-6 md:mb-4 w-full md:w-[250px]">
+                  <Image
+                    src="/images/250326_Production.png"
+                    alt="Production"
+                    width={250}
+                    height={150}
+                    className="rounded-md"
+                  />
+                  <figcaption className="text-center text-sm">
+                    Produktion
+                  </figcaption>
+                </figure>
+                
                 <p className="text-justify">
                     Wenige Tage nach dem Erstkontakt steht ein Expertenteam von t4s in der Fertigungshalle. Gemeinsam mit 
                     Produktionsleitung und Qualitätssicherung analysieren sie die verdächtigen Artikel und deren Prozesskette. 
@@ -70,23 +94,30 @@ export default function ProduktionsCase() {
                     Nebenkosten. Eine solide Entscheidungsgrundlage, wie sie im Produktionsalltag selten ist.
                 </p>
             </div>
-          <div className="flex-1 flex flex-col items-center gap-4">
-            <figure>
-              <Image
-                src="/images/250326_Production.png"
-                alt="Production"
-                width={250}
-                height={150}
-                className="rounded-md"
-              />
-              <figcaption className="text-center text-sm">Produktion</figcaption>
-            </figure>
-          </div>
+         
+            
+         
         </section>
 
         <section className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 space-y-4">
             <h2 className="text-xl font-semibold">Umsetzung und Ergebnisse</h2>
+
+            
+            <figure className="md:float-right md:ml-6 md:mb-4 w-full md:w-[250px]">
+              <Image
+                src="/images/250326_t4s_Process.png"
+                alt="t4s Process diagram"
+                width={250}
+                height={150}
+                className="rounded-md"
+              />
+              <figcaption className="text-left text-sm">
+                t4s Prozess für<br />Artikelidentifikation
+              </figcaption>
+            </figure>
+         
+
             <p className="text-justify">
                 Nach der Angebotsbesprechung gibt das Management grünes Licht. Die Entscheidung basiert auf einer klaren 
                 Erwartung: Die Ursache für den Rückgang der EBIT-Marge soll identifiziert und die monatlichen Verluste innerhalb 
@@ -129,20 +160,7 @@ export default function ProduktionsCase() {
             </p>
           </div>
 
-          <div className="flex-1 flex flex-col items-center gap-4">
-            <figure>
-              <Image
-                src="/images/250326_t4s_Process.png"
-                alt="t4s Process diagram"
-                width={250}
-                height={150}
-                className="rounded-md"
-              />
-              <figcaption className="text-center text-sm">
-                t4s Prozess für<br />Artikelidentifikation
-              </figcaption>
-            </figure>
-          </div>
+          
         </section>
 
         <section className="space-y-4">

@@ -602,56 +602,7 @@ body {
     margin-bottom: 4px;
 }
 
-/* ========================= */
-/* Image + Video Container Styling */
-/* ========================= */
-.media-container {
-    display: flex-start;
-    justify-content: flex-start; /* Stack image and video */
-    align-items: right; /* Center both */
-    max-width: 35%; /* Matches image width */
-    text-align: right;
-}
 
-/* Style for the image container */
-.image-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns image to the right */
-    flex-shrink: 0;
-    max-width: 35%;
-    text-align: center; /* Aligns image to the right */
-    margin-top: 60px; /* Optional: Adds space between text & image */
-}
-
-/* Ensure images are responsive */
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Optional: Adds rounded corners */
-}
-
-/* Apply fixed width only to this image */
-.fixed-width {
-    max-width: 100%; /* Fix width */
-    margin: auto;  /* Center the image */
-    margin-top: 60px; /* Optional: Adds space between text & image */
-}
-
-
-.video-container {
-    justify-content: right; /* Centers video horizontally */
-    align-items: center;
-    margin: 20px auto;
-    margin-top: 40px; /* Optional: Adds space between text & video */
-    max-width: 600px;
-}
-
-.video-container video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow */
-}
 
 /* ========================= */
 /* Privacy / Datenschutzerklärung */
