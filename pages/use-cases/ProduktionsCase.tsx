@@ -9,8 +9,15 @@ export default function ProduktionsCase() {
             {/* Navbar Section */}
             <Navbar_UseCases />
  
-            <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 space-y-10 text-black">
-                <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark">
+            <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 space-y-10 text-black"
+                style={{
+                    background: "linear-gradient(to bottom, #FFFFFF, #D7D2CB)",
+                }}
+            
+            >
+
+                <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark"
+                    style={{ color: "#00249C" }}>
                 Fallstudie: Mittelständiges Fertigungsunternehmen in der Kostenfalle
                 </h1>
 
