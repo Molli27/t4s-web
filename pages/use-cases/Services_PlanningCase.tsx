@@ -1,4 +1,4 @@
-import Navbar_Services from "../../components/Navbar_Services";
+import Navbar_UseCases from "../../components/Navbar_UseCases";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ export default function ProduktionsCase() {
       <div className="bg" />
 
       {/* Navbar Section */}
-      <Navbar_Services />
+      <Navbar_UseCases />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 space-y-10 text-black">
         <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark">
@@ -54,7 +54,7 @@ export default function ProduktionsCase() {
                     Bei einem Rundgang werden relevante Maschinen identifiziert, der Materialfluss nachverfolgt und nachgelagerte 
                     Schritte wie manuelle Nachbearbeitung begutachtet.
                     <br/>
-                    Schnell zeigt sich: An den Spritzgussmaschinen mit Förderband lässt sich ohne großen Aufwand eine Kamera 
+                    Schnell zeigt sich: An den Spritzgussmaschinen mit Förderband lässt sich ohne grossen Aufwand eine Kamera 
                     installieren – die Teile laufen im 40-Sekunden-Takt einzeln aus, gut sichtbar, gut zugänglich. Auch am zentralen 
                     Arbeitsplatz, an dem alle drei Artikel ihren letzten Bearbeitungsschritt durchlaufen, bietet sich ein geeigneter 
                     Punkt zur Bildaufnahme.
@@ -63,7 +63,7 @@ export default function ProduktionsCase() {
                     gewinnen – keine Momentaufnahmen, sondern ein kontinuierliches Bild der realen Abläufe. In enger Abstimmung mit 
                     dem Management fällt die Entscheidung, die Produktion dieser Artikel über drei Monate durchgängig zu überwachen.
                     <br/>
-                    t4s reagiert prompt: Auf Basis der Anforderungen wird ein maßgeschneidertes Angebot erstellt – praxisnah, 
+                    t4s reagiert prompt: Auf Basis der Anforderungen wird ein massgeschneidertes Angebot erstellt – praxisnah, 
                     strukturiert und vor allem eines: transparent. Die Projektverantwortlichen sind positiv überrascht. Statt vager 
                     Angaben erhalten sie eine klar gegliederte Kostenstruktur, von der Einrichtung über die KI-Modellerstellung bis 
                     hin zur wöchentlichen Systemnutzung. Modular aufgebaut, nachvollziehbar kalkuliert – und frei von versteckten 
@@ -104,7 +104,7 @@ export default function ProduktionsCase() {
             </p>
 
             <ul className="list-disc list-inside space-y-2 text-justify">
-              <li><strong>Unregelmäßige Zykluszeiten:</strong> Besonders auf einer älteren Maschine treten in der Spätschicht deutliche Abweichungen auf.</li>
+              <li><strong>Unregelmässige Zykluszeiten:</strong> Besonders auf einer älteren Maschine treten in der Spätschicht deutliche Abweichungen auf.</li>
               <li><strong>Häufige Unterbrüche im Prozess:</strong> Der Materialfluss stockt, Sollmengen werden oft nicht erreicht.</li>
             </ul>
 
@@ -125,7 +125,7 @@ export default function ProduktionsCase() {
             <p>
                 Die Konsequenzen folgen sofort: Die Schulung des Schichtteams wird nachgeholt, die Maschine einer Totalrevision 
                 unterzogen. Zudem sensibilisiert man die Schichtführer auf die Bedeutung sauberer Übergaben – schriftlich dokumentiert 
-                und regelmäßig überprüft.
+                und regelmässig überprüft.
             </p>
           </div>
 
@@ -140,19 +140,6 @@ export default function ProduktionsCase() {
               />
               <figcaption className="text-center text-sm">
                 t4s Prozess für<br />Artikelidentifikation
-              </figcaption>
-            </figure>
-
-            <figure>
-              <Image
-                src="/images/250326_DataSynthesis.png"
-                alt="Dash Report"
-                width={250}
-                height={150}
-                className="rounded-md"
-              />
-              <figcaption className="text-center text-sm">
-                Synthetisierung der <br />Trainingsdaten
               </figcaption>
             </figure>
           </div>

@@ -1,7 +1,7 @@
 import Navbar_UseCases from "../../components/Navbar_UseCases";
 import Footer from "../../components/Footer";
 
-import CostTable from "./KostenTabelle_1";
+
 
 import Image from 'next/image';
 
@@ -56,8 +56,14 @@ export default function ProduktionsCase() {
                         t4s reagiert prompt: Auf Basis der Anforderungen wird ein maßgeschneidertes Angebot erstellt – praxisnah, 
                         strukturiert und vor allem eines: transparent. Die Projektverantwortlichen sind positiv überrascht. Statt vager 
                         Angaben erhalten sie eine klar gegliederte Kostenstruktur, von der Einrichtung über die KI-Modellerstellung bis 
-                        hin zur wöchentlichen Systemnutzung. Modular aufgebaut, nachvollziehbar kalkuliert – und frei von versteckten 
-                        Nebenkosten. Eine solide Entscheidungsgrundlage, wie sie im Produktionsalltag selten ist.
+                        hin zur laufenden Systemnutzung. Modular aufgebaut, nachvollziehbar kalkuliert – und frei von versteckten Nebenkosten.
+                        <br/>
+                        Noch wichtiger: Die Investition rechnet sich. Bereits nach wenigen Monaten zahlt sich das System durch vermiedene 
+                        Stillstände, optimierte Abläufe und fundierte Entscheidungsgrundlagen aus. In der Regel ist der Return on 
+                        Investment (ROI) innerhalb von sechs Monaten erreicht.
+                        <br/>
+                        Eine solide Entscheidungsgrundlage, wie sie im Produktionsalltag selten ist – und ein echter Mehrwert für jedes 
+                        Unternehmen, das mit wenig Risiko den Schritt in die automatisierte Produktionsüberwachung gehen will.
                         </p> 
                     </div>
                     <div className= "media-container">
@@ -79,8 +85,6 @@ export default function ProduktionsCase() {
 
                 </div>
 
-                <h2>Die Kosten im Überblick</h2>
-                <CostTable />
 
                 <div className= "flex-container">
                     <div className="text-content">        
