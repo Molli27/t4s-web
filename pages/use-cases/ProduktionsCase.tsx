@@ -1,8 +1,5 @@
 import Navbar_UseCases from "../../components/Navbar_UseCases";
 import Footer from "../../components/Footer";
-
-
-
 import Image from 'next/image';
 
 export default function ProduktionsCase() {
@@ -39,31 +36,15 @@ export default function ProduktionsCase() {
                         
                         <h2>t4s als Partnerin für KI-gestützte Produktionsüberwachung</h2>
                         <p>
-                        Wenige Tage nach dem Erstkontakt steht ein Expertenteam von t4s in der Fertigungshalle. Gemeinsam mit 
-                        Produktionsleitung und Qualitätssicherung analysieren sie die verdächtigen Artikel und deren Prozesskette. 
-                        Bei einem Rundgang werden relevante Maschinen identifiziert, der Materialfluss nachverfolgt und nachgelagerte 
-                        Schritte wie manuelle Nachbearbeitung begutachtet.
+                        Wenige Tage nach dem Erstkontakt steht das t4s-Team in der Produktion. Gemeinsam mit der Fertigungs- und 
+                        QS-Leitung wird der Prozess analysiert, geeignete Kamerapunkte identifiziert und ein zielgerichtetes Monitoring-Setup
+                        definiert.
                         <br/>
-                        Schnell zeigt sich: An den Spritzgussmaschinen mit Förderband lässt sich ohne großen Aufwand eine Kamera 
-                        installieren – die Teile laufen im 40-Sekunden-Takt einzeln aus, gut sichtbar, gut zugänglich. Auch am zentralen 
-                        Arbeitsplatz, an dem alle drei Artikel ihren letzten Bearbeitungsschritt durchlaufen, bietet sich ein geeigneter 
-                        Punkt zur Bildaufnahme.
+                        Die Zusammenarbeit verläuft partnerschaftlich, effizient und lösungsorientiert. Ziel ist es, aussagekräftige Daten über reale Abläufe zu gewinnen – nicht nur Momentaufnahmen.
+                        t4s liefert rasch ein strukturiertes, transparentes Angebot. Die Projektverantwortlichen schätzen die klare 
+                        Kommunikation und kompetente Beratung.
                         <br/>
-                        Nach Rücksprache mit den Fachabteilungen wird ein Monitoring-Setup definiert. Ziel ist es, belastbare Daten zu 
-                        gewinnen – keine Momentaufnahmen, sondern ein kontinuierliches Bild der realen Abläufe. In enger Abstimmung mit 
-                        dem Management fällt die Entscheidung, die Produktion dieser Artikel über drei Monate durchgängig zu überwachen.
-                        <br/>
-                        t4s reagiert prompt: Auf Basis der Anforderungen wird ein maßgeschneidertes Angebot erstellt – praxisnah, 
-                        strukturiert und vor allem eines: transparent. Die Projektverantwortlichen sind positiv überrascht. Statt vager 
-                        Angaben erhalten sie eine klar gegliederte Kostenstruktur, von der Einrichtung über die KI-Modellerstellung bis 
-                        hin zur laufenden Systemnutzung. Modular aufgebaut, nachvollziehbar kalkuliert – und frei von versteckten Nebenkosten.
-                        <br/>
-                        Noch wichtiger: Die Investition rechnet sich. Bereits nach wenigen Monaten zahlt sich das System durch vermiedene 
-                        Stillstände, optimierte Abläufe und fundierte Entscheidungsgrundlagen aus. In der Regel ist der Return on 
-                        Investment (ROI) innerhalb von sechs Monaten erreicht.
-                        <br/>
-                        Eine solide Entscheidungsgrundlage, wie sie im Produktionsalltag selten ist – und ein echter Mehrwert für jedes 
-                        Unternehmen, das mit wenig Risiko den Schritt in die automatisierte Produktionsüberwachung gehen will.
+                        Die Investition zahlt sich aus: Optimierte Abläufe, weniger Stillstände – meist ist der ROI nach sechs Monaten erreicht.
                         </p> 
                     </div>
                     <div className= "media-container">
@@ -106,7 +87,7 @@ export default function ProduktionsCase() {
                         </p>
                         
                         <ul>
-                            <li><strong>Unregelmäßige Zykluszeiten:</strong> Besonders auf einer älteren Maschine treten in der Spätschicht deutliche
+                            <li><strong>Unregelmässige Zykluszeiten:</strong> Besonders auf einer älteren Maschine treten in der Spätschicht deutliche
                                  Abweichungen auf.</li>
                             <li><strong>Häufige Unterbrüche im Prozess:</strong> Der Materialfluss stockt, Sollmengen werden oft nicht erreicht.</li>
                         </ul>
@@ -126,10 +107,8 @@ export default function ProduktionsCase() {
                         <p>
                         Die Konsequenzen folgen sofort: Die Schulung des Schichtteams wird nachgeholt, die Maschine einer Totalrevision 
                         unterzogen. Zudem sensibilisiert man die Schichtführer auf die Bedeutung sauberer Übergaben – schriftlich dokumentiert 
-                        und regelmäßig überprüft.
+                        und regelmässig überprüft.
                         </p>
-
-                        
                     </div>
 
                     {/* Image + Video Container */}
@@ -150,21 +129,6 @@ export default function ProduktionsCase() {
                             <figcaption>t4s Prozess für<br/>Artikelidentifikation</figcaption>
                         </figure>
 
-
-                        <figure className="image-caption-container">
-                            {/* Dash Report Image */}
-                            <div className="image-container fixed-width">
-                                <Image 
-                                    src="/images/250326_DataSynthesis.png" 
-                                    alt="Dash Report" 
-                                    layout="intrinsic"
-                                    width={250} 
-                                    height={150} 
-                                    priority 
-                                />
-                            </div>
-                            <figcaption>Synthetisierung der <br/>Trainingsdaten</figcaption>
-                        </figure>
                     </div>
                 </div>                
 
