@@ -13,7 +13,6 @@ export default function ProduktionsCase() {
                 style={{
                     background: "linear-gradient(to bottom, #FFFFFF, #D7D2CB)",
                 }}
-            
             >
 
                 <h1 className="text-3xl sm:text-4xl font-bold text-blue-dark"
@@ -23,7 +22,24 @@ export default function ProduktionsCase() {
 
                 {/* Ausgangslage */}
                 <section className="space-y-4">
-                    <h2 className="text-xl font-semibold">Ausgangslage</h2>
+ 
+                    <h2 className="text-xl font-semibold">
+                        Ausgangslage
+                    </h2>
+
+                    {/* Floating Image (Right) */}
+                    <figure className="md:float-right md:ml-6 md:mb-4 w-full md:w-[250px]">
+                        <Image
+                        src="/images/250326_Production.png"
+                        alt="Production"
+                        width={250}
+                        height={150}
+                        className="rounded-md w-full h-auto"
+                        />
+                        <figcaption className="text-sm text-center mt-2">Produktion</figcaption>
+                    </figure>
+
+                    {/* Text Content */}
                     <p className="text-justify">
                         Im Management eines mittelständischen Kunststoffverarbeiters schrillen die Alarmglocken: Die EBIT-Marge sinkt
                         seit Monaten – leise, aber stetig. Das Unternehmen beschäftigt 150 Mitarbeitende, erwirtschaftet 21 Mio. CHF
@@ -41,19 +57,6 @@ export default function ProduktionsCase() {
                         LinkedIn-Post über t4s: ein System zur optischen Produktidentifikation mittels Kameras – ohne Eingriff in 
                         bestehende Abläufe. Einfach zu installieren, praxisnah und verständlich. Die Neugier ist geweckt.
                     </p>
-
-                    <div className="w-full flex justify-center">
-                        <figure className="text-center">
-                            <Image
-                                src="/images/250326_Production.png"
-                                alt="Production"
-                                width={250}
-                                height={150}
-                                className="rounded-md"
-                            />
-                            <figcaption className="text-sm mt-2">Produktion</figcaption>
-                        </figure>
-                    </div>
                 </section>
 
                 {/* t4s als Partnerin */}
@@ -76,9 +79,26 @@ export default function ProduktionsCase() {
                     
 
                 {/* Umsetzung und Ergebnisse */}
-                <section className="flex flex-col md:flex-row gap-6">
-                <div className="flex-1 space-y-4">
+                <section className="space-y-4">
+                
                     <h2 className="text-xl font-semibold">Umsetzung und Ergebnisse</h2>
+
+
+                    {/* Image + Video Container */}
+                    
+                    <figure className="md:float-right md:ml-6 md:mb-4 w-full md:w-[250px]">
+                        <Image
+                            src="/images/250326_t4s_Process.png"
+                            alt="t4s Process"
+                            width={250}
+                            height={150}
+                            className="rounded-md w-full h-auto"
+                        />
+                        <figcaption className="text-sm mt-2">t4s Prozess für<br />Artikelidentifikation</figcaption>
+                    </figure>
+                 
+
+
                     <p className="text-justify">
                         Nach der Angebotsbesprechung gibt das Management grünes Licht. Die Entscheidung basiert auf einer klaren 
                         Erwartung: Die Ursache für den Rückgang der EBIT-Marge soll identifiziert und die monatlichen Verluste innerhalb 
@@ -121,21 +141,9 @@ export default function ProduktionsCase() {
                         unterzogen. Zudem sensibilisiert man die Schichtführer auf die Bedeutung sauberer Übergaben – schriftlich dokumentiert 
                         und regelmässig überprüft.
                         </p>
-                    </div>
+                    
 
-                    {/* Image + Video Container */}
-                    <div className="flex-1 flex flex-col items-center gap-4">
-                        <figure className="text-center">
-                            <Image
-                                src="/images/250326_t4s_Process.png"
-                                alt="t4s Process"
-                                width={250}
-                                height={150}
-                                className="rounded-md"
-                            />
-                            <figcaption className="text-sm mt-2">t4s Prozess für<br />Artikelidentifikation</figcaption>
-                        </figure>
-                    </div>
+                    
                 </section>      
 
                 {/* Erweiterung und Erfolg */}
