@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/Navbar";
@@ -21,16 +20,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+{/* SEO optimisation */}
+<Head>
+  <title>t4s – Technology for Solutions</title>
+  <meta name="description" content="Intelligente Produktionsüberwachung für KMU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</Head>
+
+
 export default function HomePage() {
   return (
     <div className="wrapper">
-      <Head>
-        <title>t4s technology for solutions</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charSet="UTF-8" />
-        <meta name="description" content="Your website description here." />
-      </Head>
-      
       {/* Background Image */}
       <div className="bg" />    
       
@@ -63,16 +63,15 @@ export default function HomePage() {
         <TechApproach />
       </section>
 
-      {/* About us Section */}
-      <section id="about-us">
-        <AboutUs />
-      </section>
-
       {/* Contact Section */}
       <section id="contact">
         <Contact />
       </section>
 
+      {/* About us Section */}
+      <section id="about-us">
+        <AboutUs />
+      </section>
 
       {/* Footer Section */}
       <footer id="footer">

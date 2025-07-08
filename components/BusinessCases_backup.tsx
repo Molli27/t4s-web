@@ -59,31 +59,6 @@ const BusinessCases: React.FC = () => {
               </span>
             </Link>
           </div>
-        
-          {/* Questionnaire Block */}
-          <div className="p-6 bg-white rounded-md shadow-md space-y-4">
-            <h2 className="text-lg font-semibold leading-snug">
-              Ist unser System für Ihre Produktion geeignet?
-            </h2>
-            <p className="text-justify">
-              Finden Sie es in weniger als 5 Minuten heraus: Unser interaktiver Fragebogen hilft Ihnen,
-              den Nutzen einer automatisierten Produktionsüberwachung für Ihren Betrieb einzuschätzen.
-              Starten Sie jetzt und wählen Sie Ihre Sprache auf der nächsten Seite.
-            </p>
-            <Link href="/fragebogen_start">
-              <span
-                className="inline-block px-6 py-2 font-semibold rounded-md shadow-md hover:bg-blue-dark hover:text-white transition"
-                style={{
-                  backgroundColor: "#00249C", // deep blue
-                  color: "#FFFFFF",
-                }}
-              >
-                Zum Fragebogen
-              </span>
-            </Link>
-          </div>
-
-
         </div>
       </div>
     </section>
