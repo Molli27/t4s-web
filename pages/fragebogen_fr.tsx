@@ -1,6 +1,18 @@
 import { useState } from "react";
 import Image from "next/image";
 
+
+type ScaleLabels = Record<number, string>; // numerischer Index erlaubt
+
+type Question = {
+  // ...
+  scaleMin?: number;
+  scaleMax?: number;
+  scaleLabels?: ScaleLabels;
+};
+
+
+
 const questions = [
     {
       id: 1,
@@ -305,12 +317,15 @@ export default function Fragebogen() {
         {/* Skalenfrage */}
         {currentQuestion.type === "scale" && (
           <div className="flex justify-center gap-4 mb-6">
-            {currentQuestion.scaleLabels && (
-            <p className="text-sm italic text-gray-500 mb-2">
-              ({currentQuestion.scaleMin} = {currentQuestion.scaleLabels[currentQuestion.scaleMin]},{" "}
-              {currentQuestion.scaleMax} = {currentQuestion.scaleLabels[currentQuestion.scaleMax]})
-            </p>
-          )}
+            {currentQuestion.scaleLabels !== undefined
+              && typeof currentQuestion.scaleMin === "number"
+              && typeof currentQuestion.scaleMax === "number" && (
+              <p className="text-sm italic text-gray-500 mb-2">
+                ({currentQuestion.scaleMin} = {currentQuestion.scaleLabels[currentQuestion.scaleMin]},
+                {currentQuestion.scaleMax} = {currentQuestion.scaleLabels[currentQuestion.scaleMax]})
+              </p>
+            )}
+
             {Array.from({ length: currentQuestion.scaleMax }, (_, i) => {
               const value = i + 1;
               const selected = answers[currentQuestion.id]?.scale === value;
