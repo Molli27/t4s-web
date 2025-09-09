@@ -1,0 +1,73 @@
+/* globals.css – Linux-kompatibel basierend auf Windows-Vorlage */
+
+@import 'tailwindcss';
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9fafb; /* sehr helles Grau */
+  color: #1f2937; /* dunkles Grau für Text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #009FDF;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.wrapper .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/Blue_right_2520670517.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+@layer components {
+    /* Container für Fragebogenkarten */
+    .card-light {
+      @apply bg-white bg-white/90 p-8 rounded-2xl shadow-xl w-full max-w-4xl text-center;
+    }
+
+    /* Primär-Button */
+    .btn-primary {
+      @apply bg-[var(--primary-color)] text-white px-6 py-2 rounded-lg hover:brightness-110 transition;
+    }
+
+    /* Sekundär-Button (z. B. zurück oder neu starten) */
+    .btn-secondary {
+      @apply bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300 transition;
+    }
+
+    /* Responsive Eingabefelder */
+    .input-field {
+      @apply p-2 border border-gray-300 rounded w-full;
+    }
+
+    /* Fortschrittsanzeige */
+    .progress-text {
+      @apply text-sm text-gray-500 mb-2 italic;
+    }
+    .progress-bar {
+      @apply w-full bg-gray-200 rounded-full h-4 mb-6;
+    }
+    .progress-bar-fill {
+      @apply bg-[var(--primary-color)] h-4 rounded-full transition-all duration-300;
+    }
+}
