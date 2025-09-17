@@ -1,0 +1,33 @@
+name: Update ChatGPT Status
+on:
+  push:
+    branches: ["main", "dev", "feature/**"]
+  workflow_dispatch: {}
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install minimal deps
+        run: npm ci --ignore-scripts --fund=false || true
+      - name: Build status json
+        run: |
+          chmod +x scripts/build_status.py
+          python3 scripts/build_status.py
+      - name: Commit status file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add public/chatgpt-status.json
+            git commit -m "chore(ci): update chatgpt-status [skip ci]"
+            git push
+          fi

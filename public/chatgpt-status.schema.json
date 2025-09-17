@@ -1,0 +1,9 @@
+{
+  "commit": "string (short SHA)",
+  "branch": "string",
+  "timestamp": "ISO-8601",
+  "changed_files": ["path/to/file1", "path/to/file2"],
+  "areas": ["pages", "components", "styles", "config", "data"],
+  "next_build_ok": true,
+  "todo": ["kurze stichworte für nächste Schritte"]
+}
