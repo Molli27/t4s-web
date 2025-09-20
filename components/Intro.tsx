@@ -18,10 +18,10 @@ const Intro: React.FC = () => {
 
     <div className="relative z-10 flex flex-col items-center justify-end text-center px-4 sm:px-6 pt-[30vh] sm:pt-[35vh] pb-16 sm:pb-24 min-h-screen">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-shadow-lg leading-tight">
-      KI verändert die Industrie 
+      Der Wert liegt in der lückenlosen Beobachtung
       </h1>
       <p className="text-base sm:text-lg md:text-2xl font-medium mb-3 sm:mb-4 text-shadow-sm max-w-xl sm:max-w-2xl">
-      Unsere Systeme begleiten Fertigungsunternehmen auf dem Weg zur smarten Produktion
+      Für Fertigungsunternehmen: Unsichtbares sichtbar machen und Potenziale ausschöpfen
       </p>
       <p className="text-sm sm:text-md md:text-xl text-shadow-sm max-w-md sm:max-w-xl">
         effizient - skalierbar - zukunftssicher
