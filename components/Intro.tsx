@@ -20,8 +20,8 @@ const Intro: React.FC = () => {
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-shadow-lg leading-tight">
       Der Wert liegt in der lückenlosen Beobachtung
       </h1>
-      <p className="text-base sm:text-lg md:text-2xl font-medium mb-3 sm:mb-4 text-shadow-sm max-w-xl sm:max-w-2xl">
-      Für Fertigungsunternehmen: Unsichtbares sichtbar machen und Potenziale ausschöpfen
+      <p className="text-base sm:text-lg md:text-3xl font-medium mb-3 sm:mb-4 text-shadow-sm max-w-xl sm:max-w-none">
+      KI unterstützt Fertigungsunternehmen: <br /> Unsichtbares sichtbar machen und Potenziale ausschöpfen
       </p>
       <p className="text-sm sm:text-md md:text-xl text-shadow-sm max-w-md sm:max-w-xl">
         effizient - skalierbar - zukunftssicher

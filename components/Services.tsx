@@ -17,35 +17,37 @@ const Services: React.FC = () => {
           Vorausschauend handeln – für eine starke Produktion von morgen.
         </h1>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Produktion sichern heisst, Effizienz neu denken.</h2>
-          <p className="text-justify">
-            <strong>
-              t4s bietet standardisierte, sofort einsatzbereite Lösungen zur Optimierung von
-              Produktionsprozessen.
-            </strong>
-          </p>
-        </div>
-
+      <div className="space-y-4">
+        <h2 className="text-xl font-bold">Im dynamischen Umfeld der Fertigungsindustrie liefert das 
+          t4s‑System klare Antworten in Echtzeit.</h2>
+        <p className="text-justify max-sm: text-2xl md:text-xl">
+          
+        </p>
+        <ul className="list-disc list-inside text-justify space-y-1">
+          <li>welche Prozesse sofortige Aufmerksamkeit erfordern,</li>
+          <li>den Deckungsbeitrag Ihrer Produkte - aktuell, rückblickend und in der Prognose,</li>
+          <li>die Trendanalyse: Welche Artikel im Zeitverlauf an Margenstärke gewinn oder verlieren,</li>
+          <li>welche Investitionen unmittelbar die EBIT‑Marge stärken,</li>
+          <li>strategische Optionen für ein Portfolio-Management mit Fokus auf rentable Produkte.</li>
+        </ul>
+        <p>
+        So behalten Sie jederzeit den Überblick – und sichern die Zukunftsfähigkeit Ihrer Produktion.
+        </p>
+      </div>
+      
 
         <div className="space-y-4">
           <h2 className="text-xl font-bold">Komplexität bremst Prozesse</h2>
-          <p className="text-justify">
-            Je mehr Teilprozesse im Produktionsprozess involviert sind, desto höher ist die
-            Wahrscheinlichkeit für Planungsabweichungen, respektive Verzögerungen.
+          <p className="text-justify max-sm: text-2xl md:text-xl">
+            Je mehr Teilprozesse eine Produktion durchläuft, desto höher die Wahrscheinlichkeit für Verzögerungen.
           </p>
           <p className="text-justify">
-            Wird beispielsweise ein Auftrag durch 12 Prozessschritte (siehe Abbildung unten) geführt,
-            von denen jeder eine Abweichungswahrscheinlichkeit von 10 % aufweist, liegt die
-            Gesamtwahrscheinlichkeit für mindestens eine Abweichung bereits bei rund{" "}
-            <strong>72 %</strong>. Die durchschnittliche Verzögerung in der Abwicklung eines Auftrags
-            beträgt dann <strong>1,5 Stunden</strong>. Wenn dies auf 1000 Aufträge pro Jahr
-            hochgerechnet wird, resultiert ein Kapazitätsverlust von{" "}
-            <strong>
-              1'500 Arbeitsstunden – dies entspricht der Kapazität eines Mitarbeitenden mit einer
-              70%-Anstellung.
-            </strong>
+            Schon bei 12 Prozessschritte (siehe Abbildung unten) mit je 10 % Abweichungsrisiko liegt die
+            Gesamtwahrscheinlichkeit für eine Störung bei rund{" "} <strong>72 %</strong>. Das bedeutet im Durchschnitt 
+            <strong>1,5 Stunden</strong> Verzögerung pro Auftrag - bei 1'000 Aufträgen pro Jahr sind das{" "}
+            <strong>1'500 Stunden</strong> – also fast ein Vollzeitpensum.
           </p>
+          
         </div>
             
 
