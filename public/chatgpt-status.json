@@ -1,7 +1,7 @@
 {
-  "commit": "92fa0a7",
+  "commit": "5c7ee7c",
   "branch": "main",
-  "timestamp": "2025-09-20T09:56:22.122039Z",
+  "timestamp": "2025-09-22T16:27:45.120937Z",
   "changed_files": [
     ".github/workflows/dev-status.yml",
     "TODO_CHATGPT.md",
@@ -29,7 +29,6 @@
     "pages/use-cases/HeizungsCase.tsx",
     "pages/use-cases/HeizungsCase_backup.tsx",
     "pages/use-cases/KostenTabelle_1.tsx",
-    "pages/use-cases/KostenTabelle_1backup.tsx",
     "pages/use-cases/ProduktionsCase.tsx",
     "pages/use-cases/ProduktionsCase_backup.tsx",
     "pages/use-cases/Services_PlanningCase.tsx",
