@@ -42,7 +42,7 @@ const Services: React.FC = () => {
             Je mehr Teilprozesse eine Produktion durchläuft, desto höher die Wahrscheinlichkeit für Verzögerungen.
           </p>
           <p className="text-justify">
-            Schon bei 12 Prozessschritte (siehe Abbildung unten) mit je 10 % Abweichungsrisiko liegt die
+            Schon bei 12 Prozessschritten (siehe Abbildung unten) mit je 10 % Abweichungsrisiko liegt die
             Gesamtwahrscheinlichkeit für eine Störung bei rund{" "} <strong>72 %</strong>. Das bedeutet im Durchschnitt 
             <strong>1,5 Stunden</strong> Verzögerung pro Auftrag - bei 1'000 Aufträgen pro Jahr sind das{" "}
             <strong>1'500 Stunden</strong> – also fast ein Vollzeitpensum.
@@ -50,13 +50,18 @@ const Services: React.FC = () => {
           
         </div>
             
+        <div className="w-full max-w-3xl mx-auto">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+            Prozessdiagramm
+          </h2>
 
-        <div className="w-full aspect-video max-w-3xl mx-auto border border-gray-300 rounded-md shadow-md overflow-hidden">
-          <iframe
-            src="/html/netzplan_produktion_3.html"
-            title="Production Flow Diagram"
-            className="w-full h-full"
-          />
+          <div className="w-full aspect-video max-w-3xl mx-auto border border-gray-300 rounded-md shadow-md overflow-hidden">
+            <iframe
+              src="/html/netzplan_produktion_3.html"
+              title="Production Flow Diagram"
+              className="w-full h-full"
+            />
+          </div>
         </div>
           
         <p className="text-justify">
