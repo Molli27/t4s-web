@@ -1,16 +1,15 @@
 # ChatGPT Context
-Stand: 2025-09-22T16:48:03.667215Z
+Stand: 2025-09-23T07:01:18.630557Z
 Branch: main
-Commit: a41d25a
+Commit: 91d1c53
 
 ## Letzte Commit-Nachricht
-kleine Anpassungen an Service-Page
+Local edits
 
 ## Diff-Stat (HEAD~1..HEAD)
-CHATGPT_CONTEXT.md         | 19 +++++++++++++++++++
- components/Services.tsx    | 19 ++++++++++++-------
- public/chatgpt-status.json | 45 ++++-----------------------------------------
- 3 files changed, 35 insertions(+), 48 deletions(-)
+CHATGPT_CONTEXT.md         | 14 +++++++-------
+ public/chatgpt-status.json |  8 ++++----
+ 2 files changed, 11 insertions(+), 11 deletions(-)
 
 ## Nächste Schritte (aus TODO_CHATGPT.md)
 
