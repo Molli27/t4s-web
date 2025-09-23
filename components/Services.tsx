@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const Services: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ const Services: React.FC = () => {
         <ul className="list-disc list-inside text-justify space-y-1">
           <li>welche Prozesse sofortige Aufmerksamkeit erfordern,</li>
           <li>den Deckungsbeitrag Ihrer Produkte - aktuell, rückblickend und in der Prognose,</li>
-          <li>die Trendanalyse: Welche Artikel im Zeitverlauf an Margenstärke gewinn oder verlieren,</li>
+          <li>die Trendanalyse: Welche Artikel im Zeitverlauf an Margenstärke gewinnen oder verlieren,</li>
           <li>welche Investitionen unmittelbar die EBIT‑Marge stärken,</li>
           <li>strategische Optionen für ein Portfolio-Management mit Fokus auf rentable Produkte.</li>
         </ul>
@@ -38,12 +39,12 @@ const Services: React.FC = () => {
 
         <div className="space-y-4">
           <h2 className="text-xl font-bold">Komplexität bremst Prozesse</h2>
-          <p className="text-justify max-sm: text-2xl md:text-xl">
+          <p className="text-justify sm: text-l ">
             Je mehr Teilprozesse eine Produktion durchläuft, desto höher die Wahrscheinlichkeit für Verzögerungen.
           </p>
           <p className="text-justify">
-            Schon bei 12 Prozessschritten (siehe Abbildung unten) mit je 10 % Abweichungsrisiko liegt die
-            Gesamtwahrscheinlichkeit für eine Störung bei rund{" "} <strong>72 %</strong>. Das bedeutet im Durchschnitt 
+            Schon bei 12 Prozessschritten (siehe Prozessdiagramm) mit je 10 % Abweichungsrisiko liegt die
+            Gesamtwahrscheinlichkeit für eine Störung bei rund{" "} <strong>72 %</strong>. Das bedeutet im Durchschnitt{" "}
             <strong>1,5 Stunden</strong> Verzögerung pro Auftrag - bei 1'000 Aufträgen pro Jahr sind das{" "}
             <strong>1'500 Stunden</strong> – also fast ein Vollzeitpensum.
           </p>
@@ -82,60 +83,102 @@ const Services: React.FC = () => {
         </div>
 
         <p className="text-justify">
-          Mit dem <strong>t4s-System</strong> wird das Potenzial für Verbesserungen sichtbar, woraus
+          Mit dem <strong>t4s-System</strong> wird das Potenzial für Verbesserungen greifbar, woraus
           Durchlaufzeiten verkürzt werden und eine verlässliche Planung entsteht – ohne aufwendige IT.
         </p>
 
-
-        <div className="space-y-6">
-          <div>
-            <h2 className="text-xl font-bold">Ihre Vorteile mit t4s</h2>
-            <ul className="list-disc list-inside text-justify space-y-1">
-              <li>Massnahmen mit nachhaltiger Produktivitätssteigerung</li>
-              <li>Skalierbare Lösung mit flexibler Nutzungsdauer</li>
-              <li>Verständliche Fakten und Ergebnisse</li>
-              <li>Einfache Implementierung</li>
-              <li>Keine aufwendige IT-Umstellung</li>
-            </ul>
+        <div className="mt-6 flex flex-col md:flex-row md:items-start gap-12">
+          {/* Bild links */}
+          <div className="w-1/3 md:w-1/4 max-w-sm">
+            <Image
+              src="/images/t4s_concept_pictogram.png"
+              alt="t4s Konzept"
+              width={800}
+              height={600}
+              className="w-full h-auto object-contain"
+              sizes="(min-width: 768px) 33vw, 100vw"
+              priority={false}
+            />
           </div>
 
-          <p>
-            Wir helfen Unternehmen, digitale Strategien zu entwickeln und erfolgreich umzusetzen.
+          <div className="space-y-6 w-2/3">
+              <h2 className="text-xl font-bold">Ihre Vorteile mit t4s</h2>
+              <ul className="list-disc list-inside text-justify space-y-1">
+                <li>Keine aufwendige IT - keine Schnittstellen erforderlich</li>
+                <li>Skalierbare Lösung mit flexibler Nutzungsdauer</li>
+                <li>Verständliche Fakten und Ergebnisse</li>
+                <li>Einfache Implementierung</li>
+                <li>Transparente Kostenstruktur</li>
+              </ul>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-xl font-bold">Leistung</h2>
+          <p className="text-justify">
+            Die Leistungen sind modular aufgebaut – von der Analyse über die Implementierung bis
+            hin zur laufenden Nutzung. Sie bezahlen nur, was Sie tatsächlich nutzen –
+            die Systemnutzung erfolgt im monatlichen "Pay-per-Use"-Modell.
           </p>
+          <ul className="list-disc list-inside text-justify space-y-1">
+            <li>
+              <strong>Schneller ROI</strong> – Dank niedriger Einstiegskosten schnelle Amortisation
+            </li>
+            <li>
+              <strong>Flexibel</strong> – Sie entscheiden, wie lange Sie das System nutzen möchten.
+            </li>
+            <li>
+              <strong>Risikominimierung</strong> – Durch kostengünstige Pilotprojekte Erfahrung sammeln und schrittweise ausbauen.
+            </li>
+            <li>
+              <strong>Skalierbarkeit</strong> – Ihr Unternehmen wächst? Das t4s-System
+              wächst mit – neue Prozesse, Standorte oder Anlagen lassen sich einfach integrieren.
+            </li>
+          </ul>
+        </div>
 
-          <div>
-            <h2 className="text-xl font-bold">Leistung</h2>
-            <p className="text-justify">
-              Unsere Leistungen sind modular aufgebaut – von der Analyse über die Implementierung bis
-              hin zur laufenden Nutzung. Sie bezahlen nur das, was Sie tatsächlich brauchen –
-              einmalige Projektkosten werden transparent ausgewiesen und die Systemnutzung erfolgt im
-              monatlichen Pay-as-you-Go-Modell.
-            </p>
-            <ul className="list-disc list-inside text-justify space-y-1">
-              <li>
-                <strong>Schneller ROI</strong> – Dank niedriger Einstiegskosten amortisiert sich Ihre
-                Investition deutlich schneller als bei klassischen Kaufmodellen.
-              </li>
-              <li>
-                <strong>Flexibel</strong> – Sie entscheiden, wie lange Sie die Geräte nutzen möchten.
-              </li>
-              <li>
-                <strong>Risikominimierung</strong> – Veraltete oder defekte Hardware? Kein Problem –
-                wir übernehmen den Austausch und sorgen für einen reibungslosen Betrieb.
-              </li>
-              <li>
-                <strong>Skalierbarkeit leicht gemacht</strong> – Ihr Unternehmen wächst? Unsere
-                Systeme wachsen mit – neue Standorte oder Anlagen lassen sich nahtlos integrieren.
-              </li>
-            </ul>
+
+        <div className="flex justify-center my-8 px-4">
+          {/* Center: Video */}
+          <div className="w-full max-w-3xl">
+            <div className="relative w-full overflow-hidden rounded-lg shadow-md">
+              {/* 16:9 Ratio */}
+              <div className="aspect-video">
+                <video
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="w-full rounded-lg shadow-md"
+                  aria-label="t4s Animation"
+                  poster="/images/t4s_animation4web_poster.jpg"
+                  controlsList="nodownload nofullscreen"
+                  >
+                  <source
+                    src="/videos/t4s_animation4web_mobile.mp4"
+                    type="video/mp4"
+                    media="(max-width: 768px)"
+                  />
+                  <source
+                    src="/videos/t4s_animation4web_720p.mp4"
+                    type="video/mp4"
+                    media="(min-width: 769px)"
+                  />
+                  Dein Browser unterstützt das Video-Tag nicht.
+                </video>
+              </div>
+            </div>
           </div>
 
+         
+        </div>
+
+
+        <div className="space-y-4">
           <p className="text-justify font-bold">
             t4s ist die Lösung für Unternehmen, die ihre Produktionsprozesse optimieren und
-            gleichzeitig ihre Kosten im Griff behalten möchten. <br />
-            Für Ihre Anforderungen erstellen wir ein massgeschneidertes Angebot.
+            die Kosten im Griff behalten möchten. <br />
           </p>
-          
+        
         </div>
       </div>
     </section>
