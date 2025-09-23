@@ -1,7 +1,7 @@
 {
-  "commit": "7533788",
+  "commit": "748720e",
   "branch": "main",
-  "timestamp": "2025-09-23T08:41:25.814923Z",
+  "timestamp": "2025-09-23T16:54:16.588061Z",
   "changed_files": [
     ".github/workflows/dev-status.yml",
     "CHATGPT_CONTEXT.md",
@@ -14,7 +14,6 @@
     "components/Header.tsx",
     "components/Intro.tsx",
     "components/Navbar.tsx",
-    "components/Navbar_Services.tsx",
     "components/Navbar_UseCases.tsx",
     "components/Services.tsx",
     "components/ServicesTable_1.tsx",
@@ -36,6 +35,10 @@
     "public/chatgpt-status.json",
     "public/chatgpt-status.schema.json",
     "public/html/netzplan_produktion_3.html",
+    "public/images/t4s_animation4web_poster.jpg",
+    "public/images/t4s_concept_pictogram.png",
+    "public/videos/t4s_animation4web_720p.mp4",
+    "public/videos/t4s_animation4web_mobile.mp4",
     "scripts/build_status.py",
     "scripts/make_context.py",
     "styles/globals.css",
