@@ -17,24 +17,36 @@ const Services: React.FC = () => {
             style={{ color: "#00249C" }}>
           Vorausschauend handeln – für eine starke Produktion von morgen.
         </h1>
+      
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-bold">Im dynamischen Umfeld der Fertigungsindustrie liefert das 
-          t4s‑System klare Antworten in Echtzeit.</h2>
-        <p className="text-justify max-sm: text-2xl md:text-xl">
-          
-        </p>
-        <ul className="list-disc list-inside text-justify space-y-1">
-          <li>welche Prozesse sofortige Aufmerksamkeit erfordern,</li>
-          <li>den Deckungsbeitrag Ihrer Produkte - aktuell, rückblickend und in der Prognose,</li>
-          <li>die Trendanalyse: Welche Artikel im Zeitverlauf an Margenstärke gewinnen oder verlieren,</li>
-          <li>welche Investitionen unmittelbar die EBIT‑Marge stärken,</li>
-          <li>strategische Optionen für ein Portfolio-Management mit Fokus auf rentable Produkte.</li>
-        </ul>
-        <p>
-        So behalten Sie jederzeit den Überblick – und sichern die Zukunftsfähigkeit Ihrer Produktion.
-        </p>
-      </div>
+        <div className="space-y-4">
+          <p className="text-justify ">
+          <strong>t4s (technology for solutions)</strong> transformiert KI-Technologien in wertgenerierende Systeme 
+          für die fertigende Industrie. Langfristig verfolgt t4s die Vision, als Engineering-Partner KI-Lösungen in 
+          unterschiedlichste industrielle Anwendungen zu übertragen. </p>
+          <p>Der aktuelle Fokus liegt auf intelligentem Monitoring und Analysen: Wir machen die 
+          Performance Ihrer Produktion in Echtzeit sichtbar – für kürzere Durchlaufzeiten, präzisere 
+          Planung und höhere Profitabilität.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-xl font-bold">Im dynamischen Umfeld der Fertigungsindustrie liefert das 
+            t4s‑System klare Antworten in Echtzeit.</h2>
+          <p className="text-justify max-sm: text-2xl md:text-xl">
+            
+          </p>
+          <ul className="list-disc list-inside text-justify space-y-1">
+            <li>welche Prozesse sofortige Aufmerksamkeit erfordern,</li>
+            <li>den Deckungsbeitrag Ihrer Produkte - aktuell, rückblickend und in der Prognose,</li>
+            <li>die Trendanalyse: Welche Artikel im Zeitverlauf an Margenstärke gewinnen oder verlieren,</li>
+            <li>welche Investitionen unmittelbar die EBIT‑Marge stärken,</li>
+            <li>strategische Optionen für ein Portfolio-Management mit Fokus auf rentable Produkte.</li>
+          </ul>
+          <p>
+          So behalten Sie jederzeit den Überblick – und sichern die Zukunftsfähigkeit Ihrer Produktion.
+          </p>
+        </div>
       
 
         <div className="space-y-4">
@@ -64,23 +76,21 @@ const Services: React.FC = () => {
             />
           </div>
         </div>
-          
-        <p className="text-justify">
-          Wer mehr wissen möchte, wie sich Wahrscheinlichkeiten für Planungsabweichungen und die
-          resultierenden Verzögerungen bestimmen lassen, findet den Bericht hier.
-        </p>
 
-        <div className="text-center">
+        <p className="text-justify flex items-center gap-2">
+          Weiterführende Infos zu Wahrscheinlichkeiten und Verzögerungen finden Sie im Bericht.
           <Link href="/use-cases/Services_PlanningCase">
-            <span 
-            className="inline-block px-6 py-2 font-semibold rounded-md shadow-md hover:bg-blue-dark hover:text-white transition"
-              style={{ backgroundColor: "#00249C", // deep blue
-                        color: "#FFFFFF" }}
+            <span
+              className="px-2 py-1 text-sm font-normal rounded hover:bg-blue-900 hover:text-white transition"
+              style={{
+                backgroundColor: "#00249C", // deep blue
+                color: "#FFFFFF",
+              }}
             >
-              Link zum Bericht
+              Link
             </span>
           </Link>
-        </div>
+        </p>
 
         <p className="text-justify">
           Mit dem <strong>t4s-System</strong> wird das Potenzial für Verbesserungen greifbar, woraus
@@ -89,7 +99,7 @@ const Services: React.FC = () => {
 
         <div className="mt-6 flex flex-col md:flex-row md:items-start gap-12">
           {/* Bild links */}
-          <div className="w-1/3 md:w-1/4 max-w-sm">
+          <div className="w-full md:w-1/4 max-w-sm">
             <Image
               src="/images/t4s_concept_pictogram.png"
               alt="t4s Konzept"
@@ -101,44 +111,21 @@ const Services: React.FC = () => {
             />
           </div>
 
-          <div className="space-y-6 w-2/3">
-              <h2 className="text-xl font-bold">Ihre Vorteile mit t4s</h2>
-              <ul className="list-disc list-inside text-justify space-y-1">
-                <li>Keine aufwendige IT - keine Schnittstellen erforderlich</li>
-                <li>Skalierbare Lösung mit flexibler Nutzungsdauer</li>
-                <li>Verständliche Fakten und Ergebnisse</li>
-                <li>Einfache Implementierung</li>
-                <li>Transparente Kostenstruktur</li>
-              </ul>
+          <div className="space-y-6 w-full md:w-2/3">
+            <h2 className="text-xl font-bold">Ihre Vorteile mit t4s</h2>
+
+            <ul className="list-none pl-0 space-y-2 text-[15px] leading-6 sm:list-disc sm:list-outside sm:pl-6 sm:space-y-1 sm:text-base sm:leading-7 sm:text-justify marker:text-[#00249C] marker:font-semibold">
+              <li>Keine aufwendige IT – keine Schnittstellen erforderlich</li>
+              <li>Skalierbare Lösung mit flexibler Nutzungsdauer</li>
+              <li>Verständliche Fakten und Ergebnisse</li>
+              <li>Einfache Implementierung</li>
+              <li>Transparente Kostenstruktur</li>
+            </ul>
           </div>
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Leistung</h2>
-          <p className="text-justify">
-            Die Leistungen sind modular aufgebaut – von der Analyse über die Implementierung bis
-            hin zur laufenden Nutzung. Sie bezahlen nur, was Sie tatsächlich nutzen –
-            die Systemnutzung erfolgt im monatlichen "Pay-per-Use"-Modell.
-          </p>
-          <ul className="list-disc list-inside text-justify space-y-1">
-            <li>
-              <strong>Schneller ROI</strong> – Dank niedriger Einstiegskosten schnelle Amortisation
-            </li>
-            <li>
-              <strong>Flexibel</strong> – Sie entscheiden, wie lange Sie das System nutzen möchten.
-            </li>
-            <li>
-              <strong>Risikominimierung</strong> – Durch kostengünstige Pilotprojekte Erfahrung sammeln und schrittweise ausbauen.
-            </li>
-            <li>
-              <strong>Skalierbarkeit</strong> – Ihr Unternehmen wächst? Das t4s-System
-              wächst mit – neue Prozesse, Standorte oder Anlagen lassen sich einfach integrieren.
-            </li>
-          </ul>
-        </div>
-
-
-        <div className="flex justify-center my-8 px-4">
+        <div className="my-8 px-4 text-center space-y-4">
+          <h2 className="text-xl font-bold mb-4">Die Umsetzung in der Produktion</h2>
           {/* Center: Video */}
           <div className="w-full max-w-3xl">
             <div className="relative w-full overflow-hidden rounded-lg shadow-md">
@@ -168,10 +155,34 @@ const Services: React.FC = () => {
               </div>
             </div>
           </div>
-
-         
         </div>
 
+        <div className="space-y-4">
+          <h2 className="text-xl font-bold">Leistung</h2>
+          <p className="text-justify">
+            Die Leistungen sind modular aufgebaut – von der Analyse über die Implementierung bis
+            hin zur laufenden Nutzung. Sie bezahlen nur, was Sie tatsächlich nutzen –
+            die Systemnutzung erfolgt im monatlichen "Pay-per-Use"-Modell.
+          </p>
+          <ul className="list-disc list-outside pl-6 text-justify space-y-1">
+            <li>
+              <strong>Schneller ROI</strong> – Dank niedriger Einstiegskosten schnelle Amortisation
+            </li>
+            <li>
+              <strong>Flexibel</strong> – Sie entscheiden, wie lange Sie das System nutzen möchten.
+            </li>
+            <li>
+              <strong>Risikominimierung</strong> – Durch kostengünstige Pilotprojekte Erfahrung sammeln und schrittweise ausbauen.
+            </li>
+            <li>
+              <strong>Skalierbarkeit</strong> – Ihr Unternehmen wächst? Das t4s-System
+              wächst mit – neue Prozesse, Standorte oder Anlagen lassen sich einfach integrieren.
+            </li>
+          </ul>
+        </div>
+
+
+        
 
         <div className="space-y-4">
           <p className="text-justify font-bold">

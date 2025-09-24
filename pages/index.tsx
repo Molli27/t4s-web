@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Intro from "../components/Intro";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
+import Value from "../components/Value";
 import BusinessCases from "../components/BusinessCases";
 import TechApproach from "../components/TechApproach";
 import Footer from "../components/Footer";
@@ -48,9 +49,14 @@ export default function HomePage() {
         <Intro />
       </section>
 
-      {/* Services Section */}
+      {/* Services */}
       <section id="services">
         <Services />
+      </section>
+
+      {/* Value */}
+      <section id="value">
+        <Value />
       </section>
 
       {/* Business Cases */}

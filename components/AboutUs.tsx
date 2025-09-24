@@ -29,6 +29,18 @@ const AboutUs: React.FC = () => {
             Wir glauben an eine Zukunft, in der mittelständische Fertigungsunternehmen durch den gezielten
             Einsatz von Computer-Vision- und KI-Technologie ihre Wettbewerbsfähigkeit nachhaltig stärken.
           </p>
+          <p className="text-justify">
+            **t4s – unsichtbares sichtbar machen**
+
+            Die fertigende Industrie steht unter Druck: steigende Kosten, volatile Märkte und immer komplexere Prozesse. 
+            Genau hier setzt **t4s (technology for solutions)** an. Wir sind Engineeringfirma und Hersteller in einem – mit dem Ziel, modernste
+            KI-Technologien in praxisnahe, wertgenerierende Systeme für die Produktion zu transformieren.
+            Unser aktueller Fokus liegt auf dem Monitoring von Artikeln in der Wertschöpfungskette. Mit intelligenten Kameras und Analysesystemen 
+            machen wir die Performance Ihrer Produktion in Echtzeit sichtbar. Damit schaffen wir die Grundlage für kürzere Durchlaufzeiten, 
+            präzisere Planung und höhere Profitabilität.
+            Kurz gesagt: **t4s bringt KI aus dem Labor auf den Shopfloor – für echten Mehrwert in der Industrie.**
+
+          </p>
         </div>
 
         <div className="space-y-4">
