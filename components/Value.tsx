@@ -18,9 +18,9 @@ const Services: React.FC = () => {
           Der Nutzen
         </h1>
 
-        <p className="text-justify">
+        <p className="text-justify hyphens-auto break-words">
           Die Produktkarten mit KPIs – wie im Beispiel gezeigt – geben dem Management sofort Klarheit: 
-          Auf einen Blick wird sichtbar, ob ein Artikel profitabel oder problematisch ist.Ampelfarben und 
+          Auf einen Blick wird sichtbar, ob ein Artikel profitabel oder problematisch ist. Ampelfarben und 
           Kennzahlen wie Lead Time, Non-Value-Added Time und Lagerdauer zeigen Handlungsbedarf eindeutig auf.
         </p>
 
@@ -44,13 +44,16 @@ const Services: React.FC = () => {
             <ul className="list-none pl-0 space-y-2 text-[15px] leading-6 sm:list-disc sm:list-outside 
                           sm:pl-6 sm:space-y-1 sm:text-base sm:leading-7 sm:text-justify marker:text-[#00249C] 
                           marker:font-semibold">
-              <li>Verständliche Fakten und Ergebnisse</li>
-              <li>KPI-Informationen werden an die Anforderungen angepasst</li>
-              <li>Information in Echtzeit</li>
+              <li>Informationen in Echtzeit</li>
+              <li>Transparenz über alle relevanten Kennzahlen</li>
+              <li>Fundierte Entscheidungsgrundlage</li>
+              <li>Frühzeitige Erkennung von Problemen</li>
+              <li>Verbesserte Kommunikation im Team</li>
+              
             </ul>
-            <p className='text-justify'>
+            <p className='text-justify hyphens-auto break-words'>
               Diese KPI-Karten sind der Startpunkt für Drill-down-Funktionen zur Ursachenanalyse 
-              und bilden die Grundlage für fundierte Entscheidungen im Tagesgeschäft wie auch in der strategischen Planung.
+              und bilden die Grundlage für fundierte Entscheidungen im Tagesgeschäft, wie auch in der strategischen Planung.
             </p>
           </div>
         </div>

@@ -21,18 +21,18 @@ const Services: React.FC = () => {
 
         <div className="space-y-4">
           <p className="text-justify ">
-          <strong>t4s (technology for solutions)</strong> transformiert KI-Technologien in wertgenerierende Systeme 
-          für die fertigende Industrie. Langfristig verfolgt t4s die Vision, als Engineering-Partner KI-Lösungen in 
+          <strong>t4s (technology for solutions)</strong> transformiert KI-Technologien für die fertigende Industrie 
+          in wertgenerierende Systeme. <br />Langfristig verfolgt t4s die Vision, als Engineering-Partner KI-Lösungen in 
           unterschiedlichste industrielle Anwendungen zu übertragen. </p>
-          <p>Der aktuelle Fokus liegt auf intelligentem Monitoring und Analysen: Wir machen die 
-          Performance Ihrer Produktion in Echtzeit sichtbar – für kürzere Durchlaufzeiten, präzisere 
+          <p>Der aktuelle Fokus liegt auf intelligentem Monitoring der Fertigungsprozessen: Die 
+          Performance Ihrer Produktion in Echtzeit sichtbar machen – für kürzere Durchlaufzeiten, präzisere 
           Planung und höhere Profitabilität.
           </p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-bold">Im dynamischen Umfeld der Fertigungsindustrie liefert das 
-            t4s‑System klare Antworten in Echtzeit.</h2>
+            t4s‑System klare Antworten in Echtzeit:</h2>
           <p className="text-justify max-sm: text-2xl md:text-xl">
             
           </p>
@@ -79,7 +79,7 @@ const Services: React.FC = () => {
 
         <p className="text-justify flex items-center gap-2">
           Weiterführende Infos zu Wahrscheinlichkeiten und Verzögerungen finden Sie im Bericht.
-          <Link href="/use-cases/Services_PlanningCase">
+          <Link href="/use-cases/AboutStatistics">
             <span
               className="px-2 py-1 text-sm font-normal rounded hover:bg-blue-900 hover:text-white transition"
               style={{
@@ -94,7 +94,7 @@ const Services: React.FC = () => {
 
         <p className="text-justify">
           Mit dem <strong>t4s-System</strong> wird das Potenzial für Verbesserungen greifbar, woraus
-          Durchlaufzeiten verkürzt werden und eine verlässliche Planung entsteht – ohne aufwendige IT.
+          Durchlaufzeiten verkürzt werden und eine verlässliche Planung entsteht – ohne aufwendige IT und Schnittstellen.
         </p>
 
         <div className="mt-6 flex flex-col md:flex-row md:items-start gap-12">
@@ -115,7 +115,6 @@ const Services: React.FC = () => {
             <h2 className="text-xl font-bold">Ihre Vorteile mit t4s</h2>
 
             <ul className="list-none pl-0 space-y-2 text-[15px] leading-6 sm:list-disc sm:list-outside sm:pl-6 sm:space-y-1 sm:text-base sm:leading-7 sm:text-justify marker:text-[#00249C] marker:font-semibold">
-              <li>Keine aufwendige IT – keine Schnittstellen erforderlich</li>
               <li>Skalierbare Lösung mit flexibler Nutzungsdauer</li>
               <li>Verständliche Fakten und Ergebnisse</li>
               <li>Einfache Implementierung</li>
@@ -181,8 +180,6 @@ const Services: React.FC = () => {
           </ul>
         </div>
 
-
-        
 
         <div className="space-y-4">
           <p className="text-justify font-bold">

@@ -40,7 +40,7 @@ export default function ProduktionsCase() {
                     </figure>
 
                     {/* Text Content */}
-                    <p className="text-justify">
+                    <p className="text-justify hyphens-auto break-words">
                         Im Management eines mittelständischen Kunststoffverarbeiters schrillen die Alarmglocken: Die EBIT-Marge sinkt
                         seit Monaten – leise, aber stetig. Das Unternehmen beschäftigt 150 Mitarbeitende, erwirtschaftet 21 Mio. CHF
                         Umsatz und produziert im Drei-Schicht-Modell an fünf Tagen die Woche. Das Portfolio umfasst 230 aktive Artikel.
@@ -64,7 +64,7 @@ export default function ProduktionsCase() {
                     <h2 className="text-xl font-semibold">
                         t4s als Partnerin für KI-gestützte Produktionsüberwachung
                     </h2>
-                    <p className="text-justify">
+                    <p className="text-justify hyphens-auto break-words">
                         Wenige Tage nach dem Erstkontakt steht das t4s-Team in der Produktion. Gemeinsam mit der Fertigungs- und 
                         QS-Leitung wird der Prozess analysiert, geeignete Kamerapunkte identifiziert und ein zielgerichtetes Monitoring-Setup
                         definiert.
@@ -99,7 +99,7 @@ export default function ProduktionsCase() {
                  
 
 
-                    <p className="text-justify">
+                    <p className="text-justify hyphens-auto break-words">
                         Nach der Angebotsbesprechung gibt das Management grünes Licht. Die Entscheidung basiert auf einer klaren 
                         Erwartung: Die Ursache für den Rückgang der EBIT-Marge soll identifiziert und die monatlichen Verluste innerhalb 
                         von vier Monaten beseitigt werden.
@@ -115,7 +115,9 @@ export default function ProduktionsCase() {
                         Produktionsplanung abgeglichen – und liefern bald erste Auffälligkeiten:
                         </p>
                         
-                        <ul className="list-disc list-inside space-y-2 text-justify">
+                        <ul className="list-none pl-0 space-y-2 leading-6 sm:list-disc sm:list-outside 
+                          sm:pl-6 sm:space-y-1 sm:leading-7 sm:text-justify marker:text-[#00249C] 
+                          marker:font-semibold">
                             <li>
                                 <strong>Unregelmässige Zykluszeiten:</strong> Besonders auf einer älteren Maschine treten in der Spätschicht deutliche Abweichungen auf.
                             </li>
@@ -123,20 +125,22 @@ export default function ProduktionsCase() {
                                 <strong>Häufige Unterbrüche im Prozess:</strong> Der Materialfluss stockt, Sollmengen werden oft nicht erreicht.
                             </li>
                         </ul>
-                        <p className="text-justify">
+                        <p className="text-justify hyphens-auto break-words">
                             Das Ergebnis: eine lückenlose, objektive Dokumentation in Bild- und Tabellenform – eine solide Datenbasis, die endlich Transparenz
                             in die bisher spekulative Fehlersuche brachte.
                             <br/>
                             Der Produktionsleiter lädt zur Besprechung – gemeinsam mit dem Schichtleiter, einem Technologen und den 
                             zuständigen Facharbeitenden. Die Analyse bringt folgende Schwachstellen ans Licht:
                         </p>
-                        <ul className="list-disc list-inside space-y-2 text-justify">
+                        <ul className="list-none pl-0 space-y-2 leading-6 sm:list-disc sm:list-outside 
+                          sm:pl-6 sm:space-y-1 sm:leading-7 sm:text-justify marker:text-[#00249C] 
+                          marker:font-semibold">
                             <li><strong>Unzureichende Schulung:</strong> Das Spätschicht-Team ist neu und nicht ausreichend eingewiesen.</li>
                             <li><strong>Technische Probleme:</strong> Die betroffene Maschine zeigt vermehrt Störungen im Zusammenspiel mit einem bestimmten Kunststoffgranulat.</li>
                             <li><strong>Mangelhafte Schichtübergaben:</strong> Probleme werden nicht dokumentiert und bleiben dadurch unsichtbar.</li>
                         </ul>
 
-                        <p className="text-justify">
+                        <p className="text-justify hyphens-auto break-words">
                         Die Konsequenzen folgen sofort: Die Schulung des Schichtteams wird nachgeholt, die Maschine einer Totalrevision 
                         unterzogen. Zudem sensibilisiert man die Schichtführer auf die Bedeutung sauberer Übergaben – schriftlich dokumentiert 
                         und regelmässig überprüft.
@@ -149,7 +153,7 @@ export default function ProduktionsCase() {
                 {/* Erweiterung und Erfolg */}
                 <section className="space-y-4">
                     <h2 className="text-xl font-semibold">Erweiterung und Erfolg</h2>
-                    <p className="text-justify">
+                    <p className="text-justify hyphens-auto break-words">
                         Die Resultate sprechen für sich – und das Management reagiert prompt. Die Überwachung wird um einen weiteren Monat 
                         verlängert, um die Wirksamkeit der eingeleiteten Massnahmen zu überprüfen. Frühindikatoren zeigen bereits positive 
                         Entwicklungen: stabilere Zykluszeiten, weniger Unterbrüche und klar dokumentierte Schichtübergaben.
@@ -171,7 +175,7 @@ export default function ProduktionsCase() {
                     {/* Fazit */}
                 <section className="space-y-4">
                     <h2 className="text-xl font-semibold">Fazit</h2>
-                    <p className="text-justify">
+                    <p className="text-justify hyphens-auto break-words">
                         Die Implementierung des t4s-Systems liefert wertvolle Erkenntnisse, um Produktionsverluste zu reduzieren, 
                         Schulungsdefizite aufzudecken und Prozess-probleme frühzeitig zu erkennen. Die durchgeführte Analyse zeigt, dass mit 
                         gezielter Überwachung und KI-gestützter Prozessoptimierung erhebliche Einsparpotenziale realisiert werden können. 
