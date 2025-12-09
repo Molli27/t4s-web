@@ -38,8 +38,8 @@ const Navbar: React.FC = () => {
         <ul className="hidden sm:flex space-x-6 items-center text-white text-base">
           {[
             ["services", "Leistungen"],
-            ["business-cases", "Anwendungen"],
             ["tech-approach", "Technologie"],
+            ["stories", "Beispiele"],
             ["contact", "Kontakt"],
             ["about-us", "Über uns"],
           ].map(([id, label]) => (
@@ -57,8 +57,8 @@ const Navbar: React.FC = () => {
         <ul className="sm:hidden flex flex-col items-center bg-[#141B4D] text-white pb-4 space-y-4 text-base">
           {[
             ["services", "Leistungen"],
-            ["business-cases", "Anwendungen"],
             ["tech-approach", "Technologie"],
+            ["stories", "Beispiele"],
             ["contact", "Kontakt"],
             ["about-us", "Über uns"],
           ].map(([id, label]) => (

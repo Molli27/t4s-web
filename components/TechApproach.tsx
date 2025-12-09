@@ -10,41 +10,48 @@ const TechApproach: React.FC = () => {
       <div className="max-w-5xl mx-auto space-y-12 text-black">
         <h1 className="text-3xl sm:text-4xl font-bold"
             style={{ color: "#00249C" }}>
-          Technologie</h1>
+          Unser Technologie-Ansatz
+        </h1>
 
-        {/* Section 1: Computer Vision */}
+        {/* Einleitung */}
+        <div className="space-y-4 text-justify text-base md:text-xl">
+          <p className="hyphens-auto break-words">
+            Der Kern von t4s liegt in einem <strong>standardisierten Prozess</strong>,
+            der es ermöglicht, Produkte in der Fertigung mit hoher Sicherheit zu identifizieren.
+            Von der Datenerfassung bis zum robusten KI-Modell – unser Ansatz verbindet
+            bewährte Technologien mit praxistauglicher Umsetzung.
+          </p>
+        </div>
+
+        {/* Section 1: Datenerfassung */}
         <div className="flex flex-col md:flex-row items-start gap-6">
-
           <div className="rounded-md p-6 shadow-md space-y-4 flex-1"
-          style={{ backgroundColor: "#B59E5F", }}
-          >
+          style={{ backgroundColor: "#B59E5F" }}>
             <h2 className="text-xl font-semibold mb-2">
-              Computer Vision – Maschinen lernen, zu sehen
+              Datenerfassung – Basis für jedes Modell
             </h2>
-            <p className="text-justify">
-              Computer Vision ermöglicht Maschinen, Bilder zu analysieren und daraus Informationen zu
-              gewinnen.
+            <p className="text-justify hyphens-auto break-words">
+              Ein strukturierter Aufbau für Foto- und Videoaufnahmen bildet die Grundlage.
+              Standardisierte Aufnahmeszenarien stellen sicher, dass die Datenqualität stimmt
+              und die Modelle reproduzierbar trainiert werden können.
             </p>
           </div>
           <div className="flex-1 flex justify-center">
             <img
               src="/images/250212_CompVision_0.png"
-              alt="Computer Vision"
+              alt="Prototyp Datenerfassung"
               className="w-full max-w-sm rounded-md object-contain"
             />
           </div>
         </div>
 
-        {/* Section 2: KI Modelle */}
+        {/* Section 2: KI-Modelle */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold">KI-Modelle – Standardisiert, robust, einsatzbereit</h2>
-          <p className="text-justify">
-            Wir integrieren bewährte, vortrainierte KI-Algorithmen für die visuelle Objekterkennung.
-            Dies ermöglicht eine präzise optische Merkmalerkennung zur zuverlässigen Klassifizierung und
-            Identifikation von Artikeln. Die Artikelaufnahme erfolgt über eine geführte, standardisierte
-            Benutzeroberfläche – effizient, reproduzierbar und skalierbar.<br />
-            Unsere Kunden lassen wir dabei nicht allein: Wir übernehmen auf Wunsch die komplette Artikelaufnahme
-            oder schulen Ihre Mitarbeitenden gezielt für den eigenständigen Einsatz.
+          <h2 className="text-xl font-semibold">KI-Modelle – robust und einsatzbereit</h2>
+          <p className="text-justify hyphens-auto break-words">
+            Mit bewährten Architekturen setzen wir auf schnelle und präzise
+            Objekterkennung. Der Trainingsprozess ist standardisiert und dokumentiert – so entsteht
+            ein Modell, das zuverlässig Artikel klassifiziert und skalierbar eingesetzt werden kann.
           </p>
         </div>
 
@@ -52,21 +59,18 @@ const TechApproach: React.FC = () => {
         <div className="flex flex-col md:flex-row items-start gap-6">
           <div className="flex-1 space-y-4">
             <h2 className="text-xl font-semibold">
-              Hardware & IT-Infrastruktur – Flexibel für jede Industrieumgebung
+              Hardware – flexibel und praxisnah
             </h2>
-            <p className="text-justify">
-              Unsere Lösung basiert auf einem Zusammenspiel aus Kamerasystemen und Edge-Computern, die den trainierten
-              Algorithmus lokal ausführen. Die erfassten Daten werden in eine zentrale Datenbank übertragen – je nach
-              Gegebenheit per WLAN, Ethernet oder industriellem Bussystem.<br />
-              Wir setzen je nach Einsatzszenario unterschiedliche Kameratypen ein: Von kompakten, geschützten Systemen
-              für Pilotprojekte bis hin zu robusten Industrievarianten gemäss gängiger Normen. So schaffen wir eine
-              skalierbare Infrastruktur – passend zu Ihrer Produktionsumgebung.
+            <p className="text-justify hyphens-auto break-words">
+              Kamerasysteme und Edge-Computer arbeiten Hand in Hand: Daten werden lokal erfasst
+              und verarbeitet, ohne komplexe IT-Infrastruktur. Ob Pilotprojekte oder robuste
+              Industrieumgebung – die Hardware passt sich an Ihre Produktionsbedingungen an.
             </p>
           </div>
           <div className="flex-1 flex justify-end">
             <img
               src="/images/250509_MachVisionCam_1.jpg"
-              alt="Industrial Camera"
+              alt="Kamerasystem"
               className="w-full max-w-xs rounded-md object-contain"
             />
           </div>
@@ -74,20 +78,19 @@ const TechApproach: React.FC = () => {
 
         {/* Section 4: Peripherie */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold">Peripherie – Modular und einsatzbereit</h2>
+          <h2 className="text-xl font-semibold">Peripherie – Licht und Setup im Griff</h2>
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="flex-1">
-              <p className="text-justify">
-                Ein durchdachtes Installationssystem ermöglicht die schnelle, flexible Montage der Kameras direkt vor Ort.
-                Für optimale Bildqualität werden bei Bedarf zusätzliche Beleuchtungseinrichtungen eingesetzt – ein oft
-                unterschätzter, aber entscheidender Faktor für zuverlässige Erkennungs-ergebnisse. So sichern wir den stabilen
-                Betrieb auch bei herausfordernden Lichtverhältnissen.
+              <p className="text-justify hyphens-auto break-words">
+                Ein durchdachtes Installationssystem erlaubt flexible Montage direkt vor Ort.
+                Beleuchtung und Hintergrund sind entscheidend für Bildqualität – deshalb setzen wir
+                auf standardisierte Module, die stabile Ergebnisse auch unter schwierigen Bedingungen sichern.
               </p>
             </div>
             <div className="flex-1 flex justify-end">
               <img
                 src="/images/250509_CameraInstall.jpg"
-                alt="Camera Installation"
+                alt="Peripherie"
                 className="w-full max-w-xs rounded-md object-contain"
               />
             </div>
