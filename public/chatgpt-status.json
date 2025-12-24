@@ -1,11 +1,10 @@
 {
-  "commit": "24571a5",
+  "commit": "a127634",
   "branch": "main",
-  "timestamp": "2025-12-09T06:58:45.614634Z",
+  "timestamp": "2025-12-24T16:30:46.564807Z",
   "changed_files": [
-    ".github/workflows/dev-status.yml",
     "CHATGPT_CONTEXT.md",
-    "TODO_CHATGPT.md",
+    "SECURITY.md",
     "components/AboutUs.tsx",
     "components/BusinessCases.tsx",
     "components/BusinessCases_backup.tsx",
@@ -27,7 +26,6 @@
     "pages/use-cases/ProduktionsCase_backup.tsx",
     "pages/use-cases/Services_PlanningCase.tsx",
     "public/chatgpt-status.json",
-    "public/chatgpt-status.schema.json",
     "\"public/images/250414_Erwart_KumuliertVerz\\303\\266gerung_1.png\"",
     "public/images/250414_WahrschAbwPlanungshorizont.png",
     "public/images/Dashboard_UX_Card_A_a.png",
@@ -45,10 +43,7 @@
     "public/images/t4s_concept_pictogram.png",
     "public/videos/t4s_DashboardAnim4website_f2.mp4",
     "public/videos/t4s_animation4web_720p.mp4",
-    "public/videos/t4s_animation4web_mobile.mp4",
-    "scripts/build_status.py",
-    "scripts/make_context.py",
-    "t4s-web_js.code-workspace"
+    "public/videos/t4s_animation4web_mobile.mp4"
   ],
   "areas": [
     "components",
