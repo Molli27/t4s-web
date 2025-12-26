@@ -1,7 +1,7 @@
 {
-  "commit": "a127634",
+  "commit": "323672d",
   "branch": "main",
-  "timestamp": "2025-12-24T16:30:46.564807Z",
+  "timestamp": "2025-12-26T09:46:10.889738Z",
   "changed_files": [
     "CHATGPT_CONTEXT.md",
     "SECURITY.md",
@@ -17,8 +17,6 @@
     "components/stories.tsx",
     "package-lock.json",
     "package.json",
-    "pages/fragebogen_de.tsx",
-    "pages/fragebogen_fr.tsx",
     "pages/index.tsx",
     "pages/use-cases/AboutStatistics.tsx",
     "pages/use-cases/HeizungsCase_backup.tsx",
