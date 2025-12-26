@@ -58,11 +58,13 @@ const Services: React.FC = () => {
             Je mehr Teilprozesse eine Produktion durchläuft, desto höher die Wahrscheinlichkeit für Verzögerungen.
           </p>
           <p className="hyphens-auto break-words">
-            Schon bei 12 Prozessschritten (siehe Prozessdiagramm) mit je 10 % Abweichungsrisiko liegt die Gesamtwahrscheinlichkeit
-            für eine Störung bei rund <strong>72 %</strong>. Das bedeutet im Durchschnitt <strong>1,5 Stunden</strong>
-            Verzögerung pro Auftrag – bei 1'000 Aufträgen pro Jahr sind das <strong>1'500 Stunden</strong> – also fast ein
-            Vollzeitpensum.
+            <p className="hyphens-auto break-words">
+            Das Prozessdiagramm zeigt eine typische Verkettung aus 12 Schritten – teils parallel, teils seriell.
+            Schon bei moderater Variabilität pro Schritt ist die Chance hoch, dass ein Auftrag mindestens eine Verzögerung erfährt (≈ 70 %).
+            Genau deshalb ist Real-Time-Monitoring entscheidend: Abweichungen werden sichtbar, bevor sie sich entlang der Kette fortpflanzen.
+            </p>
           </p>
+
         </div>
 
         {/* Prozessdiagramm */}
