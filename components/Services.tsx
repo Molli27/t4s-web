@@ -27,7 +27,7 @@ const Services: React.FC = () => {
             unterschiedlichste industrielle Anwendungen zu übertragen.
           </p>
           <p className="hyphens-auto break-words">
-            Der aktuelle Fokus liegt auf intelligentem Monitoring der Fertigungsprozesse: Die Performance Ihrer Produktion in
+            Der Fokus liegt auf intelligentem Monitoring der Fertigungsprozesse: Die Performance Ihrer Produktion in
             Echtzeit sichtbar machen – für kürzere Durchlaufzeiten, präzisere Planung und höhere Profitabilität.
           </p>
         </div>
@@ -58,11 +58,10 @@ const Services: React.FC = () => {
             Je mehr Teilprozesse eine Produktion durchläuft, desto höher die Wahrscheinlichkeit für Verzögerungen.
           </p>
           <p className="hyphens-auto break-words">
-            <p className="hyphens-auto break-words">
             Das Prozessdiagramm zeigt eine typische Verkettung aus 12 Schritten – teils parallel, teils seriell.
             Schon bei moderater Variabilität pro Schritt ist die Chance hoch, dass ein Auftrag mindestens eine Verzögerung erfährt (≈ 70 %).
             Genau deshalb ist Real-Time-Monitoring entscheidend: Abweichungen werden sichtbar, bevor sie sich entlang der Kette fortpflanzen.
-            </p>
+          
           </p>
 
         </div>

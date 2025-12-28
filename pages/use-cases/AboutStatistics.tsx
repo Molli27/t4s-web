@@ -95,8 +95,6 @@ function LightboxImage({
 }
 
 
-
-
 export default function AboutStatistics() {
   return (
     <div className="wrapper">
@@ -120,141 +118,263 @@ export default function AboutStatistics() {
             Warum Statistik im Produktionsumfeld?
           </h2>
           <p className="text-justify hyphens-auto break-words">
-              Produktionsprozesse sind von vielen Einflussfaktoren geprägt – von Maschinenzuständen über Materialverfügbarkeit 
-              bis zu menschlichem Handeln. Mit belastbaren Messdaten aus dem KI‑unterstützten <strong>t4s‑System</strong> machen 
-              etablierte statistische Methoden Abweichungen sichtbar, die sonst verborgen bleiben. 
-              So wird Komplexität mess‑ und vergleichbar.
+            In verketteten Produktionsprozessen entstehen Abweichungen nicht isoliert.
+            Sie resultieren aus dem Zusammenwirken vieler einzelner Einflüsse, die teils zufälliger, teils systematischer Natur sind.
+            Statistische Methoden ermöglichen es, diese Variabilität auf Systemebene zu analysieren und zu bewerten – nicht im Sinne der 
+            Erklärung einzelner Ereignisse, sondern zur Beschreibung robuster Zusammenhänge im Gesamtprozess.
           </p>
 
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <section className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-6 items-start">
+          <div className="space-y-4">
             <h2 className="text-xl font-semibold">
               Wahrscheinlichkeit und Statistik – das Zusammenspiel
             </h2>
 
-            <LightboxImage
+            <p className="text-justify hyphens-auto break-words">
+              Einzelne Ereignisse wie Störungen, Nacharbeit oder Rüstabweichungen lassen sich oft nur begrenzt vorhersagen.
+              Ihre Auswirkungen – insbesondere Verzögerungen in der Durchlaufzeit – folgen jedoch statistischen Mustern.
+              Statistik betrachtet daher nicht das einzelne Ereignis, sondern die Häufigkeit, Streuung und Überlagerung 
+              vieler solcher Effekte über den gesamten Prozess hinweg.
+            </p>
+
+          </div>
+
+          <aside>
+             <LightboxImage
               src="/images/250414_Erwart_KumuliertVerzögerung_1.png"
               alt="Kumulierte Erwartung der Verzögerung"
               caption={<>Kumulierte Erwartung<br/>der Verzögerung</>}
-              className="md:float-right md:ml-6 md:mb-4 w-full md:w-[250px] md:self-start"
+              className="w-full"
             />
 
+          </aside>
+        </section>
+
+        <section className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-6 items-start">
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold">
+              Verkettung der Prozessschritte und Fortpflanzung von Abweichungen
+            </h2>
+
             <p className="text-justify hyphens-auto break-words">
-              Wahrscheinlichkeit beschreibt, wie wahrscheinlich ein Ereignis eintritt (z. B. Maschinenausfall, Verzögerung). 
-              <strong>Statistik</strong> schätzt diese Wahrscheinlichkeiten aus Daten und überträgt sie auf reale Produktionssituationen. 
-              Beides zusammen bildet die Grundlage für nachvollziehbare Prognosen und Entscheidungen.
+              In mehrstufigen Prozessketten wirken Abweichungen nicht isoliert.
+              Mit jeder zusätzlichen Prozessstufe steigt die Wahrscheinlichkeit, dass mindestens eine Abweichung auftritt
+              und sich auf nachgelagerte Schritte auswirkt.
+              Diese Fortpflanzungseffekte führen dazu, dass selbst scheinbar stabile Einzelprozesse in der Gesamtsicht
+              zu relevanten Verzögerungen beitragen können.
+              Gerade diese Verkettung macht statistische Betrachtungen im Produktionsumfeld notwendig.
             </p>
           </div>
+
+          <aside className="w-full">
+            <figure className="w-full">
+              <button
+                type="button"
+                className="group block w-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00249C] rounded-lg"
+                onClick={() =>
+                  window.open("/html/netzplan_produktion_3.html", "_blank", "width=1200,height=900")
+                }
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    window.open("/html/netzplan_produktion_3.html", "_blank", "width=1200,height=900");
+                  }
+                }}
+                aria-label="Prozessdiagramm vergrößern"
+                title="Klicken zum Vergrößern"
+              >
+                <div className="border border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg hover:border-gray-400 transition-all relative">
+                  <Image
+                    src="/images/ProcessNetPlan_0.jpg"
+                    alt="Prozessdiagramm einer verketteten Prozesskette"
+                    width={280}
+                    height={180}
+                    className="w-full h-auto"
+                    sizes="(min-width: 768px) 280px, 100vw"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all flex items-center justify-center">
+                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity bg-black bg-opacity-70 px-4 py-2 rounded-md text-sm font-medium">
+                      Klicken zum Vergrößern
+                    </span>
+                  </div>
+                </div>
+              </button>
+
+              <figcaption className="text-center text-sm mt-1">
+                Prozessdiagramm (interaktive Ansicht)
+              </figcaption>
+            </figure>
+          </aside>
         </section>
 
 
-        <section className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <section className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-6 items-start">
+          <div className="space-y-4">
             <h2 className="text-xl font-semibold">
               Komplexität greifbar machen
               </h2>
-  
-            <LightboxImage
+
+            <p className="text-justify hyphens-auto break-words">
+                Einzelne Prozessschritte erscheinen für sich genommen oft überschaubar.
+                In ihrer Verknüpfung entsteht jedoch ein hochkomplexes System mit zahlreichen Wechselwirkungen.
+                Statistische Modelle ermöglichen es, diese Komplexität zu strukturieren, indem sie die zugrunde 
+                liegende Variabilität über Verteilungen abbilden und damit interpretierbar machen.
+            </p>
+          </div>
+
+            <aside>
+              <LightboxImage
               src="/images/Netzdiagramm_Komplexität.png"
               alt="Netzdiagramm"
               caption={<>Netzdiagramm<br/>Komplexität</>}
-              className="md:float-right md:ml-6 md:mb-4 w-full md:w-[250px] md:self-start"
+              className="w-full"
             />
 
-            <p className="text-justify hyphens-auto break-words">
-                Einzelne Prozessschritte wirken unscheinbar; in ihrer Verknüpfung entsteht ein hochkomplexes System. 
-                Statistik reduziert diese Vielschichtigkeit auf gut interpretierbare Modelle. Über Verteilungen lassen 
-                sich Abweichungen realitätsnah beschreiben.
-            </p>
-
-          </div>
+          </aside>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <section className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-6 items-start">
+          <div className="space-y-4">
             <h2 className="text-xl font-semibold">
               Planungsabweichungen erklären
               </h2>
 
-            
+         
+            <p className="text-justify hyphens-auto break-words">
+                Warum weicht ein Produktionsplan von der Realität ab?
+                Datenbasierte statistische Analysen zeigen, dass Abweichungen häufig nicht rein zufällig auftreten, 
+                sondern aus Wahrscheinlichkeiten, Abhängigkeiten und dem gewählten Planungshorizont resultieren.
+                Diese Transparenz unterstützt eine fundierte Priorisierung, stabilisiert Planungsentscheidungen 
+                und verbessert die Termintreue.
+            </p>
+
+          </div>
+          <aside>
             <LightboxImage
               src="/images/250414_WahrschAbwPlanungshorizont.png"
               alt="Planungsabweichungen begründen"
               caption={<>Der Einfluss<br/>des Planungshorizonts</>}
-              className="md:float-right md:ml-6 md:mb-4 md:w-[250px] md:self-start"
+              className="w-full"
             />
-         
-
-            <p className="text-justify hyphens-auto break-words">
-                Warum weicht ein Produktionsplan von der Realität ab? Datenbasierte, statistische Analysen zeigen: 
-                Abweichungen sind selten Zufall, sondern ergeben sich aus Wahrscheinlichkeiten und dem <strong>Planungshorizont</strong>. 
-                Diese Transparenz stärkt die Priorisierung, stabilisiert Pläne und verbessert die Termintreue.
-            </p>
-
-          </div>
+        
+          </aside>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
-            <h2 className="text-xl font-semibold">
-              Bewährte Verteilungen im Produktionskontext
-              </h2>
+        <section className="space-y-6">
+          <h2 className="text-xl font-semibold">Verteilungen im Produktionskontext</h2>
 
-            <LightboxImage
-              src="/images/StatistikDiagramme_1.png"
-              alt="Diagramme"
-              caption={<>Verteilungen<br/>im Produktionskontext</>}
-              className="md:float-right md:ml-6 md:mb-4 md:w-[250px] md:self-start"
-            />
-  
-           
-            <div className="sm:text-justify hyphens-auto break-words">
-              <div className="mt-8 pl-6">
-                <strong>Normalverteilung:</strong> – beschreibt natürliche Schwankungen, z. B. Toleranzen in der Fertigung.
-              </div>
+          <p className="text-justify hyphens-auto break-words">
+            Typische Prozessgrößen zeigen Streuungen, die sich durch geeignete Verteilungen modellieren lassen.
+            Die folgenden drei Formen sind in der industriellen Praxis besonders bewährt.
+          </p>
 
-              <div className="mt-36 pl-6">
-                <strong>Log-Normalverteilung:</strong> – für rechtsschiefe Prozesse, bei denen die meisten Werte nahe am 
-                Median liegen, aber gelegentlich deutlich längere Bearbeitungs- oder Lieferzeiten auftreten.
-              </div>
-
-              <div className="mt-24 pl-6">
-                <strong>Weibull-Verteilung:</strong> – flexibel für Lebensdauern und Ausfallzeiten; erfasst sowohl frühe 
-                Fehler als auch Verschleissprozesse und ist ein Standard im Qualitäts- und Instandhaltungsmanagement.
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+            <div className="space-y-2">
+              <LightboxImage
+                src="/images/Normalverteilung.png"
+                alt="Normalverteilung"
+                caption={<>Abb.&nbsp;X(a): Normalverteilung</>}
+                className="w-full"
+                thumbWidth={360}
+                thumbHeight={240}
+              />
+              <p className="text-sm text-justify hyphens-auto break-words">
+                Beschreibt natürliche Schwankungen um einen Mittelwert, z.&nbsp;B. Fertigungs- oder Messstreuungen.
+              </p>
             </div>
 
+            <div className="space-y-2">
+              <LightboxImage
+                src="/images/Lognormverteilung.png"
+                alt="Lognormalverteilung"
+                caption={<>Abb.&nbsp;X(b): Lognormalverteilung</>}
+                className="w-full"
+                thumbWidth={360}
+                thumbHeight={240}
+              />
+              <p className="text-sm text-justify hyphens-auto break-words">
+                Geeignet für rechtsschiefe Zeiten: viele Fälle nahe am Median, selten deutlich längere Bearbeitungs- oder Lieferzeiten.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <LightboxImage
+                src="/images/Weibullverteilung.png"
+                alt="Weibull-Verteilung"
+                caption={<>Abb.&nbsp;X(c): Weibull-Verteilung</>}
+                className="w-full"
+                thumbWidth={360}
+                thumbHeight={240}
+              />
+              <p className="text-sm text-justify hyphens-auto break-words">
+                Standard für Lebensdauern und Ausfallzeiten; modelliert frühe Ausfälle ebenso wie Verschleißphasen.
+              </p>
+            </div>
           </div>
         </section>
 
-        <section className="space-y-4">
+
+        <section className="space-y-6">
           <h2 className="text-xl font-semibold">
-            Von Daten zur Prognose: Monte‑Carlo‑Simulation
+            Von Daten zur Prognose: Monte-Carlo-Simulation
           </h2>
-          <p className="text-justify hyphens-auto break-words">
-              Laufend erfasste t4s‑Daten speisen die <strong>Monte‑Carlo‑Simulationen</strong> über den gesamten Produktionsprozess. Zufallswerte 
-              aus den ermittelten Verteilungen erzeugen viele mögliche Realisierungen. Dadurch werden Unsicherheiten quantifiziert 
-              und Kennzahlen wie Durchlaufzeiten, Pufferbedarfe oder Liefertreue belastbar abgeschätzt.
-          </p> 
+
+          <div className="space-y-4">
+            <p className="text-justify hyphens-auto break-words">
+              Monte-Carlo-Simulationen nutzen die zuvor beschriebenen Verteilungen, um die Auswirkungen von Variabilität entlang
+              der gesamten Prozesskette quantitativ abzuschätzen. Dazu werden viele mögliche Prozessverläufe rechnerisch
+              durchgespielt, indem Zufallswerte aus den geschätzten Verteilungen gezogen und zu vollständigen Realisierungen
+              kombiniert werden.
+            </p>
+
+            <p className="text-justify hyphens-auto break-words">
+              Das Ergebnis ist nicht eine einzelne Kennzahl, sondern eine Wahrscheinlichkeitsverteilung möglicher Resultate
+              (z.&nbsp;B. Durchlaufzeit oder Termintreue). Dadurch lassen sich typische Verläufe ebenso wie pessimistische
+              Szenarien und seltene Extremfälle transparent beschreiben.
+            </p>
+          </div>
 
           <LightboxImage
-              src="/images/MontCarloSim_1.png"
-              alt="Diagramme"
-              caption={<>Methoden<br/>der Statistik</>}
-              className="block mx-auto md:mb-4 md:w-[600px]"
+            src="/images/MontCarloSim_1.png"
+            alt="Monte-Carlo-Simulation: Verteilungen, Stichproben und resultierende Bandbreiten"
+            caption={<>Abb.&nbsp;X: Monte-Carlo-Simulation zur Quantifizierung von Unsicherheiten entlang einer Prozesskette</>}
+            className="w-full"
+            thumbWidth={960}
+            thumbHeight={540}
           />
 
-          <p className="text-justify hyphens-auto break-words">    
-              <strong>Ergebnis:</strong> Ihre Produktion wird nicht nur datengetrieben, sondern auch statistisch fundiert – ein wichtiger 
-              Schritt hin zur Smart Factory und zu weiterführenden Steuerungsmodellen (z. B. digitaler Zwilling).
-            
+          <p className="text-justify hyphens-auto break-words">
+            <strong>Ergebnis:</strong> Auf Basis laufend erfasster Prozessdaten wird die Produktion nicht nur datengetrieben,
+            sondern statistisch fundiert bewertbar. Dies schafft eine robuste Grundlage für operative Entscheidungen
+            (z.&nbsp;B. Pufferdimensionierung, Priorisierung) und für weiterführende Steuerungsmodelle, etwa im Kontext
+            eines digitalen Zwillings.
           </p>
         </section>
 
 
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 my-6">
+          <p className="font-semibold mb-2">Einordnung der Ergebnisse</p>
+          <ul className="list-disc list-inside text-sm space-y-1">
+            <li>Die Modelle basieren auf gemessenen oder geschätzten Prozessdaten.</li>
+            <li>Abhängigkeiten zwischen Prozessen werden vereinfacht abgebildet.</li>
+            <li>Die Ergebnisse liefern Orientierung und Vergleichbarkeit – keine exakten Vorhersagen einzelner Aufträge.</li>
+          </ul>
+        </div>
 
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold">
+            Erkenntnisse operativ nutzen
+          </h2>
+          <p className="text-justify hyphens-auto break-words">  
+          Je früher Abweichungen erkannt werden, desto besser lassen sich ihre Auswirkungen begrenzen.
+          Real-Time-Monitoring liefert die dafür notwendige Datengrundlage und macht statistische Zusammenhänge 
+          operativ nutzbar.
+          So wird aus abstrakter Variabilität eine steuerbare Größe im Produktionsalltag.
+
+          </p> 
+
+        </section>
 
 
       </main>
